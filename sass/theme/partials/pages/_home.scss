@@ -1,0 +1,565 @@
+
+// ********** About Section **********
+.about {
+   .left-section {
+      padding-top: 7rem;
+
+      .circle--element {
+         width: 6.5rem;
+         height: 6.5rem;
+         background-color: $primary;
+         border-radius: 50%;
+         position: absolute;
+         top: -8%;
+         left: 9rem;
+         z-index: 999;
+      }
+
+      .circular--landscape {
+         position: relative;
+         overflow: hidden;
+         z-index: 1;
+         border-radius: 50%;
+         width: 16rem;
+         height: 16rem;
+
+         .image {
+            z-index: 2;
+            width: 17rem;
+            height: 21rem;
+            position: absolute;
+            left: 0rem;
+            top: 0rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            overflow: hidden;
+         }
+
+         .image-overlay {
+            z-index: 3;
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/images/square_empty_circle-01.svg');
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+         }  
+       }
+   }
+
+   .right-section {
+      padding: 4rem 2rem 0;
+      position: relative;
+      
+      h2 {
+         font-family: $poppins;
+         font-weight: 600;
+         font-size: 1rem;
+         color: $darkGrey;
+         text-transform: uppercase;
+         margin: 4rem 0 2rem;
+      }
+      
+      .description {
+         font-family: $avLight;
+         color: $darkGrey;
+         line-height: 2rem;
+         font-size: 1.25rem;
+         margin: 0 0 2.5rem;
+
+         b {
+            font-family: $avHeavy;
+         }
+      }
+
+      .btn-grad {
+         display:inline-block;
+      }
+   }
+}
+
+// ********** Services Section **********
+
+.services {
+    background: $greige;
+    position: relative;
+    border-radius: 3.125rem;
+    padding: 4rem;
+    z-index: 1;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    border: none !important;
+
+    h2 {
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 1rem;
+        color: $darkGrey;
+        text-transform: uppercase;
+        margin: 0 0 3rem;
+    }
+
+    a .card {
+        border-radius: 1rem;
+        background-color:$lightGreige;
+        margin:1rem 0;
+        border: none !important;
+
+        .card-body {
+            padding:1.5rem;
+        }
+
+        .service-title {
+            font-size: 1.25rem;
+            font-family: $avBlack;
+        }
+
+        .service-description {
+            font-size: 1.25rem;
+            font-family: $avLight;
+        }
+
+        .service-icon {
+            transition: all 0.2s ease-out;
+            img {
+                height:5rem;
+            }
+        }
+    }
+
+    a:hover .card {
+        .card-body {
+            text-decoration-line: none !important;
+            text-decoration-thickness: none !important;
+            text-decoration-color: none !important;
+            text-decoration-style: none !important;
+            text-decoration: none !important;
+        }
+        .service-title {
+            color: $primary;
+            text-decoration-line: none !important;
+            text-decoration-thickness: none !important;
+            text-decoration-color: none !important;
+            text-decoration-style: none !important;
+            text-decoration: none !important;
+        }
+        .service-description {
+            text-decoration-line: none !important;
+            text-decoration-thickness: none !important;
+            text-decoration-color: none !important;
+            text-decoration-style: none !important;
+            text-decoration: none !important;
+        }
+        .service-icon {
+            margin-top:-1rem;
+            padding-bottom:1rem;
+        }
+    }
+
+}
+
+// ********** Careers Section **********
+
+.careers {
+   margin-top:160px;
+   margin-bottom:160px;
+
+    h2 {
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 1rem;
+        color: $darkGrey;
+        text-transform: uppercase;
+        margin: 0 0 3rem;
+    }
+
+    .description {
+        font-family: $avLight;
+        color: $darkGrey;
+        line-height: 2rem;
+        font-size: 1.25rem;
+        margin: 0 0 2.5rem;
+
+        b {
+            font-family: $avHeavy;
+        }
+    }
+
+    .btn-grad {
+        display:inline-block;
+    }
+
+    .careers-image {
+        width:50%;
+
+        .image {
+            background-position: center right;
+            border-radius: 3rem 0 0 3rem;
+            background-repeat:no-repeat;
+            background-size:cover;
+            height:100%;
+        }
+            
+        .careers-element {
+            position: absolute;
+            right: 93%;
+            bottom: 2rem;
+            z-index: 5;
+            height: 2rem;
+
+            img {
+                max-width:initial;
+                height:100%;
+            }
+        }
+    }
+}
+
+.insights {
+    position: relative;
+    margin-bottom: 4rem;
+
+    .bg-blue {
+        background-color: $primaryBlue;
+    } 
+
+    .bg-half-blue {
+        position:relative;
+        background-color: $primaryBlue;
+        background: linear-gradient(180deg, $primaryBlue 75%, white 50%);
+    }
+
+    .insights-title {
+        padding-top :4rem;
+        
+        h2 {
+            font-family: $poppins;
+            font-weight: 600;
+            font-size: 1rem;
+            color: $greige;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+   
+    .slider-group {
+        padding-top:2rem;
+        z-index: 999;
+
+        .slider-item {
+            padding:0 1rem;
+
+            a { 
+                display:inline-block;
+                width: 100%;
+                border-radius: 2.5rem;
+                text-decoration: none !important;
+                outline: none!important;
+            }
+        }
+
+        .prev_arrow, .next_arrow {
+            position: absolute;
+            color: white;
+            display: inline-block;
+            cursor: pointer;
+            top: -2.5rem !important;
+
+            :hover {
+                color: #647487
+            }
+        }
+
+        .prev_arrow {
+            right: 6.25rem;
+        }
+
+        .next_arrow {
+            right: 2.25rem;
+        }
+
+        .slick-list {
+            width: calc(100% + 16.25rem);
+        }
+
+    }
+ 
+    .slider-card {
+        width: 100%;
+        height: 100%;
+        border-radius: 45px;
+        background-color: $greige;
+        position: relative;
+        display: inline-block;
+        transition: 0.25s ease-out;
+        margin-top: 3rem;
+
+        &:hover {
+            transform: translateY(-2rem);
+
+            &:before {
+                opacity: 1;
+            }
+
+            h2 {
+                color: rgba(46,48,66, .68)!important;
+            }
+
+            .info {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        &:before {
+            transition: 0.25s;
+        }
+
+        .slider-wrapper {
+            padding: 2rem;
+
+            .category {
+                h3 {
+                    font-family: $poppins;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    color: $darkGrey;
+                    text-transform: uppercase;
+                }
+            }
+
+            .title {
+                h2 {
+                    font-family: $avBlack;
+                    color: $primaryBlue;
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                    padding: 1rem 0 0;
+                    margin-bottom:0;
+                } 
+            }
+
+            .description {
+                font-size: 1rem;
+                color: $darkGrey !important;
+                font-family: $avLight;
+            } 
+        }
+
+        .img {
+            border-radius: 2.5rem;
+            height: 16rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.blog-element {
+    position: absolute;
+    z-index: 1;
+    bottom: 6.25rem;
+    left: 7.5rem;
+    height: 15.625rem;
+    width: 15.625rem;
+}
+ 
+// ********** Mobile CSS Views **********
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .careers {
+        .description {
+            margin-right:2rem;
+            margin-left:2rem;
+        }
+    }
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+    .hero-wrapper {
+        padding: 8.75rem 0;
+        position: relative;
+        top: 0.625rem; 
+        
+        h1 {
+            font-family: $poppins;
+            font-weight: 600 !important;
+            font-size: 1.75rem;
+            color: $white;
+            margin-bottom: 6.5rem;
+        }
+
+        .hero-description {
+            width: 100%;
+            margin-left: 0;
+            
+            span {
+                color: $white;
+                font-family: $avLight;
+                font-size: 1.75rem;
+            }
+        }
+
+        .hero-subtitle-wrapper {
+            width: 90% !important;
+            background-color: $greige;
+            min-height: auto;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+
+            .hero-subtitle {
+                padding-left: 1rem !important;
+                margin-left: 0 !important;
+            }
+            
+            h2 {
+                font-family: $poppins;
+                font-weight: 600 !important;
+                font-size: 1rem;
+                color: $white; 
+                padding: 1.25rem 0;
+                margin: 0;
+            }
+        }
+    }
+
+    .careers {
+
+        .careers-image {
+            width: 100%;
+            border-radius: 0;
+            position: relative;
+            top: initial;
+            right: initial;
+
+            .image {
+                border-radius: 0;
+                min-height: 25rem;
+            }
+
+            .careers-element {
+                position: absolute;
+                left: 40%;
+                bottom: -2rem;
+                z-index: 5;
+                height: 3rem;
+            }
+        }
+    }
+
+    .insights .slider-group .slick-list {
+        width: 100%;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+    .about {
+        .left-section {
+            .circle--element {
+                top: 0;
+                left: 65%;
+            }
+
+            .circular--landscape {
+                display: inline-block;
+                position: relative;
+                width: 18rem;
+                margin: 0px auto;
+                height: 18rem;
+                overflow: hidden;
+                border-radius: 50%;
+                z-index: 99;
+                img {
+                    width: auto;
+                    height: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .right-section {
+            padding: 4rem 2rem 0;
+            position: relative;
+            
+            .description {
+                font-family: $avLight;
+                color: $darkGrey;
+                line-height: 2rem;
+                font-size: 1.25rem;
+                margin: 0 0 2.5rem;
+
+                b {
+                font-family: $avHeavy;
+                }
+            }
+        }
+    }
+   
+   .about {
+      .left-section {
+         .circular--landscape {
+            width: 16rem;
+            height: 16rem;
+         }
+      }
+   }
+
+   .services {
+      img {
+         left: 95%;
+      }
+   }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .careers {
+        .careers-image {      
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            top: 0;
+            right: 0;
+            width: 50%;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .careers {
+        .careers-image {      
+            width: 50%;
+        }
+    }
+    .insights .slider-group .slick-list {
+        width: calc(100% + 31.25rem);
+    }
+}

@@ -1,0 +1,438 @@
+.intelligent-automation {
+  margin: 1rem auto;
+
+  .super-body.section-margin {
+      margin: 0rem 0 8rem;
+  }
+
+  strong, b {
+      color: $primary;
+  }
+
+    // ********** Super Body **********
+    .super-body {
+        font-family: $poppins;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        font-weight: 300;
+        border-top: 1px solid $mediumGrey;
+        border-bottom: 1px solid $mediumGrey;
+        padding: 4rem 0;
+
+        strong, b {
+            font-family: $poppins;
+            font-weight: 500;
+            color: $darkGrey !important;
+        }
+    }
+
+    // ********** Approach Section **********
+    .bg-blue {
+        background-color: $primaryBlue;
+    }
+
+    .bg-half-blue {
+        position: relative;
+        background-color: $primaryBlue;
+        background: linear-gradient(180deg, $primaryBlue 50%, white 50%);
+    }
+
+    .approach {
+        margin: 4rem 0 0;
+
+        .bg-blue {
+            color:white;
+        }
+
+        .section-header {
+            padding-top: 8rem;
+
+            .container {
+                position: relative;
+            }
+
+            h2 {
+                font-family: $avBlack;
+                font-size:1.25rem
+            }
+
+            .section-copy {
+                font-family: $poppins;
+                font-size: 1.3rem;
+                line-height: 2rem;
+                font-weight: 200;
+                padding: 0 0 5rem;
+
+                h2 {
+                    font-family: $poppins;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    padding: 0 0 2rem;
+                }
+            }
+
+            .section-element {
+                position: absolute;
+                top: -13.25rem;
+                left: 0;
+                width: 9.5rem;
+                height: 9.5rem;
+                background-size: 9.5rem 9.5rem;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-position: center;
+                background-image: url('../assets/images/blog-element.png');
+            }
+        }
+    }
+
+    // ********** Capabilities **********
+    .capabilities-header {
+        h2 {
+            font-family: Poppins,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #4c4c4c;
+            text-transform: uppercase;
+            margin: 2rem 0 2rem;
+            padding: 4rem 0 0;
+        }
+    }
+    .capabilities-title {
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.5rem;
+            color: $darkGrey!important;
+            margin: 0 0 2rem;
+        }
+    }
+    .capabilities-desc {
+        font-family: $avLight;
+        color: $darkGrey;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin: 0 0 2.5rem;
+    }
+    .capabilities-image {
+        max-width: 7rem;
+        max-height:7rem;
+        margin:0 auto;
+    }
+
+    // ********** Seperator **********
+    .seperator {
+        border-top: 1px solid $mediumGrey;
+    }
+
+    // ********** Getting Started **********
+    .getting-started {
+        h2 {
+            font-family: Poppins,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #4c4c4c;
+            text-transform: uppercase;
+            margin: 2rem 0 2rem;
+            padding: 4rem 0 0;
+        }
+        .subtext {
+            font-family: $avLight;
+            color: $darkGrey;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            margin: 0 0 2.5rem;
+        }
+    }
+
+    // ********** Getting Started **********
+    .left-content {
+        margin-top:8rem;
+        margin-bottom:8rem;
+        padding: 4rem 0;
+
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.5rem;
+            color: $darkGrey;
+            margin: 0 0 2rem;
+        }
+
+        .description {
+            font-family: $avLight;
+            color: $darkGrey;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin: 0 0 3.5rem;
+            
+            b {
+                font-family: $avHeavy;
+            }
+        }
+
+        .left-content-image {
+            width:48%;
+
+            .image {
+                background-position: left top;
+                border-radius: 3rem 0 0 3rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+            }   
+        }
+    }
+
+    .right-content {
+        margin-top:8rem;
+        margin-bottom:8rem;
+        padding: 4rem 0;
+
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.5rem;
+            color: $darkGrey;
+            margin: 0 0 2rem;
+        }
+
+        .description {
+            font-family: $avLight;
+            color: $darkGrey;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin: 0 0 3.5rem;
+            
+            b {
+                font-family: $avHeavy;
+            }
+        }
+
+        .right-content-image {
+            width:48%;
+
+            .image {
+                background-position: center top;
+                border-radius: 0 3rem 3rem 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+            }   
+        }
+    }
+
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) { 
+
+        .breadcrumb-mobile {
+            padding-left: 2rem!important;
+            margin-top: 0;
+        }
+
+        // ********** Brand Promises **********
+        .capabilities-title {
+            h2 {
+                font-size: 1.25rem;
+                margin:0 0 1rem;
+            }
+        }
+
+        .capabilities-desc {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            margin:0 0 1rem;
+        }
+
+        .left-content {
+            margin: 0;
+            padding: 0;
+
+            .left-content-image {
+                
+                .automation-element {
+                    position: absolute;
+                    right: 50%;
+                    bottom: -1.1rem;
+                    z-index: 5;
+                    height: 2.5rem;
+    
+                    img {
+                        max-width:initial;
+                        height:100%;
+                    }
+                }
+            }
+        }
+        
+        .right-content {
+            margin: 0 0 4rem;
+            padding: 4rem 0 0;
+           
+            .description {
+                margin: 0 0 1.5rem;
+            }
+        }
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {   
+        .left-content {
+            .left-content-image {
+                width: 100%;
+                border-radius: 0;
+                position: relative;
+                top: initial;
+                right: initial;
+
+                .image {
+                    border-radius: 0;
+                    min-height: 25rem;
+                }
+
+                .about-element {
+                    position: absolute;
+                    left: 40%;
+                    bottom: -2rem;
+                    z-index: 5;
+                    height: 3rem;
+                }
+            }
+        }
+
+        .right-content {
+            .right-content-image {
+                width: 100%;
+                border-radius: 0;
+                position: relative;
+                top: initial;
+                right: initial;
+
+                .image {
+                    border-radius: 0;
+                    min-height: 25rem;
+                }
+
+                .about-element {
+                    position: absolute;
+                    right: 25%;
+                    bottom: -2rem;
+                    z-index: 5;
+                    height: 4rem;
+                }
+            }
+        }
+    }
+
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) { }
+
+    // Large devices (desktops, less than 1200px)
+    @media (max-width: 1199.98px) { }
+
+
+    // Extra small devices (portrait phones, less than 576px)
+    // No media query since this is the default in Bootstrap
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {  }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { 
+        .left-content {
+            .left-content-image {      
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                top: 0;
+                right: 0;
+                width: 48%;
+
+                .automation-element {
+                    position: absolute;
+                    right: 70%;
+                    bottom: -1.1rem;
+                    z-index: 5;
+                    height: 2.5rem;
+    
+                    img {
+                        max-width:initial;
+                        height:100%;
+                    }
+                }
+            }
+        }
+        .right-content {
+            .right-content-image {      
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                top: 0;
+                left: 0;
+                width: 48%;
+            }
+        }
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { 
+        .left-content {
+            .left-content-image {
+                .automation-element {
+                    position: absolute;
+                    right: 72%;
+                    bottom: -1.1rem;
+                    z-index: 5;
+                    height: 2.5rem;
+        
+                    img {
+                        max-width:initial;
+                        height:100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { 
+        .left-content {
+            .left-content-image {      
+                width:48%;
+                .automation-element {
+                    position: absolute;
+                    right: 78%;
+                    bottom: -1.1rem;
+                    z-index: 5;
+                    height: 2.5rem;
+        
+                    img {
+                        max-width:initial;
+                        height:100%;
+                    }
+                }
+            }
+        } 
+        .right-content .right-content-image {      
+            width:48%;
+        }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1440px) { 
+        .left-content {
+            .left-content-image {      
+                width:48%;
+                .automation-element {
+                    position: absolute;
+                    right: 81%;
+                    bottom: -1.1rem;
+                    z-index: 5;
+                    height: 2.5rem;
+        
+                    img {
+                        max-width:initial;
+                        height:100%;
+                    }
+                }
+            }
+        } 
+    }
+}

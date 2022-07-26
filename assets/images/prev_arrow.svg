@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="41px" viewBox="0 0 22 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="HOME" transform="translate(-1295.000000, -4142.000000)" stroke="#E5E5E5" stroke-width="2.4">
+            <g id="Blog" transform="translate(0.000000, 4080.000000)">
+                <polyline id="Path" transform="translate(1306.000000, 82.500000) rotate(-270.000000) translate(-1306.000000, -82.500000) " points="1287 73 1306 92 1325 73"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

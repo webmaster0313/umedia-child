@@ -1,0 +1,67 @@
+.location-wrapper {
+    background: rgba(255,255,255,.92);
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 6em;
+    width: 40%;
+    border-radius: 4.5rem 0 0 4.5rem;
+    padding: 3.5rem;
+    margin-top: 4rem;
+
+    .location-element {
+        position: absolute;
+        top: -1.5rem;
+        right: 20%;
+    }
+
+    .location-address {
+        font-family: $avLight;
+        color: $darkGrey;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+
+        p {
+        margin-top: 0;
+        margin-bottom: 0rem;
+        }
+    }
+}
+
+.intro-copy {
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  padding: 2rem 0;
+  h2{
+    font-family: $poppins;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 300;
+  }
+}
+
+.location-subtitles {
+  h2 {
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 1rem;
+    color: $darkGrey;
+   
+  }
+}
+
+.half-circle-element-location {
+  transform: scaleX(-1);
+  position: absolute;
+  top: 720px;
+  right: 100px;
+  float: right;
+  width: 300px;
+  z-index: 1;
+}
+
+.partner-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

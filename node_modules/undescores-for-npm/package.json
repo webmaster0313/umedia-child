@@ -1,0 +1,26 @@
+{
+  "name": "undescores-for-npm",
+  "version": "1.0.0",
+  "description": "Undescores WordPress Starter Theme as package for npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holger1411/_s-on-npm.git"
+  },
+  "keywords": [
+    "wordpress",
+    "underscores",
+    "_s",
+    "starter",
+    "theme"
+  ],
+  "author": "Holger Koenemann",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/holger1411/_s-on-npm/issues"
+  },
+  "homepage": "https://github.com/holger1411/_s-on-npm#readme"
+}

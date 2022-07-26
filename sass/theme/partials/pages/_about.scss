@@ -1,0 +1,744 @@
+.about-page {
+    margin: 1rem auto;
+
+    .super-body.section-margin {
+        margin: 6rem 0 3rem;
+    }
+
+    #listings.section-margin {
+        margin: 8rem auto;
+    }
+
+    strong, b {
+        color: $primary;
+    }
+
+   /* .titlebar {
+        position: relative;
+        width: initial;
+
+        .primary-bar-extension {
+            background-color: $primary;
+            width: 4rem;
+            height: 100%;
+            position: absolute;
+            right: 100%;
+            top: 0;
+        }
+    }
+*/
+    .about-language {
+        font-size: 1.25rem;
+
+        #postings-cta:hover {
+            cursor: pointer;
+            opacity: 0.75;
+            text-decoration: underline;
+        } 
+    }
+
+    // ********** Super Body **********
+    .super-body {
+        font-family: $poppins;
+        font-size: 1.1rem;
+        line-height: 2rem;
+        font-weight: 300;
+        border-top: 1px solid $mediumGrey;
+        border-bottom: 1px solid $mediumGrey;
+        padding: 4rem 0;
+
+        strong, b {
+            font-family: $poppins;
+            font-weight: 500;
+            color: $darkGrey !important;
+        }
+    }
+
+    // ********** Mid-Title **********
+    .mid-title {
+        margin: 6rem 0 10rem;
+
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.75rem;
+            text-align: center;
+        }
+    }
+
+    // ********** Everything We Do Section **********
+    .bg-blue {
+        background-color: $primaryBlue;
+    }
+
+    .bg-half-blue {
+        position: relative;
+        background-color: $primaryBlue;
+        background: linear-gradient(180deg, $primaryBlue 50%, white 50%);
+    }
+
+    .everything_we_do {
+        margin: 4rem 0 0;
+
+        .bg-blue {
+            color:white;
+        }
+
+        .section-header {
+            padding-top: 8rem;
+
+            .container {
+                position: relative;
+            }
+
+            h2 {
+                font-family: $avBlack;
+                font-size:1.25rem
+            }
+
+            .section-copy {
+                font-family: $poppins;
+                font-size: 1.25rem;
+                line-height: 2rem;
+                font-weight: 200;
+                padding: 0 0 5rem;
+            }
+
+            .section-element {
+                position: absolute;
+                top: -13.25rem;
+                left: 0;
+                width: 9.5rem;
+                height: 9.5rem;
+                background-size: 9.5rem 9.5rem;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-position: center;
+                background-image: url('../assets/images/blog-element.png');
+            }
+        }
+    }
+
+    // ********** Leadership **********
+    .left-content {
+        margin-top:8rem;
+        margin-bottom:8rem;
+        padding: 4rem 0;
+
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.75rem;
+            color: $darkGrey;
+            margin: 0 0 2rem;
+        }
+
+        .description {
+            font-family: $avLight;
+            color: $darkGrey;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin: 0 0 3.5rem;
+            
+            b {
+                font-family: $avHeavy;
+            }
+        }
+
+        .left-content-image {
+            width:50%;
+
+            .image {
+                background-position: left top;
+                border-radius: 3rem 0 0 3rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+            }   
+
+            .about-element {
+                position: absolute;
+                right: 90%;
+                bottom: 1.5rem;
+                z-index: 5;
+                height: 2rem;
+
+                img {
+                    max-width:initial;
+                    height:100%;
+                }
+            }
+        }
+    }
+
+    // ********** Where We Work **********
+    .where_we_work { 
+        background: $lightGreige;
+        position: relative;
+        border-top-left-radius: 5.625rem;
+        border-bottom-left-radius: 5.625rem;
+        padding: 6rem 8rem 6rem 6rem;
+        z-index: 1;
+
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.75rem;
+        }
+
+        .section-copy {
+            font-family: $poppins;
+            font-size: 1.25rem;
+            line-height: 2.5rem;
+            font-weight: 200;
+            
+        }
+
+        .where_we_work-extension {
+            background: $lightGreige;
+            position:absolute;
+            top:0;
+            left:100%;
+            width:100%;
+            height:100%;
+            z-index:100;
+        }
+
+        .where-we-work-element {
+            position: absolute;
+            z-index: 999;
+            top: 0;
+            right: -4rem;
+            width: 44%;
+            height: 100%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            background-position: right;
+            background-image: url('../assets/images/Services-Element.png');
+        }
+    }
+
+    // ********** What We Believe **********
+    .what-we-believe {
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+        padding-top: 8rem;
+        border-top: 1px solid #979797;
+
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.75rem;
+            color: $darkGrey;
+            margin: 0 0 1.5rem;
+        }
+
+        .description {
+            font-family: $avLight;
+            color: $darkGrey;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin: 0 0 3.5rem;
+
+            b {
+                font-family: $avHeavy;
+                color: $darkGrey;
+            }
+        }
+        .circle--element {
+            background-image: url('../assets/images/Services-Element.png');
+            width: 10rem;
+            height: 10rem;
+            position: absolute;
+            top: -22%;
+            left: 10rem;
+            z-index: 1;
+            background-size: 100%; 
+        }
+
+        .circular--landscape {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            border-radius: 50%;
+            width: 20rem;
+            height: 20rem;
+
+            .image {
+                z-index: 2;
+                width: 25rem;
+                height: 25rem;
+                position: absolute;
+                left: 0;
+                top: -1rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+                overflow: hidden;
+            }
+
+            .image-overlay {
+                z-index: 3;
+                height: 100%;
+                width: 100%;
+                background-image: url('../assets/images/square_empty_circle-01.svg');
+                background-color: transparent;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+            }  
+        }
+    }
+
+// ********** Mission **********
+
+.mission-title {
+    h2 {
+        font-family: Poppins,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #4c4c4c;
+        text-transform: uppercase;
+        margin: 4rem 0 2rem;
+    }
+}
+
+.mission {
+    background: #eae9e1;
+    position: relative;
+    border-top-left-radius: 5.625rem;
+    border-bottom-left-radius: 5.625rem;
+    padding: 2rem;
+    z-index: 1;
+
+    h2 {
+        font-family: $avBlack;
+        font-size: 1.5rem;
+        color: $darkGrey;
+        margin-bottom:0;
+    }
+
+    .mission-extension {
+        background: $lightGreige;
+        position:absolute;
+        top:0;
+        left:100%;
+        width:100%;
+        height:100%;
+        z-index:100;
+    }
+}
+
+.super-body-mission {
+    font-family: $poppins;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+
+    strong, b {
+        font-family: $poppins;
+        font-weight: 500;
+        color: $darkGrey !important;
+    }
+}
+
+    // ********** Values Section **********
+    .values {
+        position: relative;
+        margin-bottom: 4rem;
+
+        .values-title {
+            padding: 4rem 0 2rem;
+            
+            h2 {
+                font-family: Poppins,"Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-weight: 600;
+                font-size: 1rem;
+                color: white;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+        }
+
+        .large-padding {
+            padding: 0 0 6rem;
+            margin: 0 0 6rem;
+        }
+        
+        .values-slider-group {
+            padding-top: 2rem;
+            z-index: 999;
+
+            .slider-item {
+                padding: 0 1.5rem;
+                font-size: 1.75rem;
+                line-height: 2rem;
+                margin-bottom: 1.5rem;
+                width: 100%;
+                color: white;
+                
+                p {
+                    margin: 0;
+                    padding: 0 0 3rem;
+                }
+
+                img {
+                    border-radius: 3.5rem;
+                }
+            }
+
+            .prev_arrow, .next_arrow {
+                position: absolute;
+                color: white;
+                display: inline-block;
+                cursor: pointer;
+                top: -4rem !important;
+        
+                :hover {
+                    color: #647487
+                }
+            }
+
+            .prev_arrow {
+                right: 3.5rem;
+            }
+
+            .next_arrow {
+                right: 0rem;
+            }
+
+            .slick-dotted.slick-slider {
+                margin-bottom: 2rem;
+            }
+
+            .slick-dots {
+                position: absolute;
+                bottom: -1.5rem;
+                display: block;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                text-align: center;
+
+                li {
+                    position: relative;
+                    display: inline-block;
+                    width: 0.75rem;
+                    height: 0.75rem;
+                    margin: 0 0.25rem;
+                    padding: 0;
+                    cursor: pointer;
+                    
+                    button {
+                        font-size: 0;
+                        line-height: 0;
+                        display: block;
+                        width: 0.75rem;
+                        height: 0.75rem;
+                        padding: 0.25rem;
+                        cursor: pointer;
+                        color: transparent;
+                        border: 0;
+                        outline: none;
+                        background: transparent;
+            
+                        &:hover,
+                        &:focus {
+                            outline: none;
+                        }
+                            
+                        &:hover:before,
+                        &:focus:before {
+                            opacity: 1;
+                        }
+
+                        &:before {
+                            font-family: 'slick';
+                            font-size: 1.5rem;
+                            line-height: 0.5rem;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 0.75rem;
+                            height: 0.75rem;
+                            content: '';
+                            text-align: center;
+                            opacity: 0.75;
+                            color: transparent;
+                            border: 3px solid #979797;
+                            border-radius: 50%;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                        }
+                    }
+
+                    &.slick-active button:before {
+                        opacity: 0.75;
+                        background-color: #979797;
+                    }
+                }
+            }
+        }
+    }
+
+    // ********** Brand Promises **********
+    .brand-header {
+        h2 {
+            font-family: Poppins,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: #4c4c4c;
+            text-transform: uppercase;
+            margin: 2rem 0 2rem;
+            padding: 4rem 0 0;
+        }
+    }
+    .brand-title {
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.5rem;
+            color: $darkGrey!important;
+            margin: 0 0 2rem;
+        }
+    }
+    .brand-desc {
+        font-family: $avLight;
+        color: $darkGrey;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin: 0 0 3.5rem;
+    }
+    .brand-image {
+        max-width: 7rem;
+        max-height:7rem;
+        margin:0 auto;
+    }
+
+    // ********** Awards **********
+
+    .awards {
+        border-top: 1px solid #979797;
+
+        .header {
+            margin: 2rem 0 0;
+
+            h2 {
+                font-family: $avBlack;
+                font-size: 1.75rem;
+                color: $darkGrey;
+                margin: 0;
+            }  
+        }
+    }
+    .awards-card {
+        img {
+            margin: 0 0 2rem;
+            max-height: 85px;
+        }
+
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.5rem;
+            color: $darkGrey;
+            margin: 1rem 0;
+            padding: .5rem 0;
+        } 
+
+        h3 {
+            font-family: $avLight;
+            color: $darkGrey;
+            font-size: 1.25rem;
+            line-height: 2.5rem;
+            margin: 0 0 3.5rem;
+        } 
+    }
+
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) { 
+        .where_we_work {
+            background: #eae9e1;
+            position: relative;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            padding: 4rem;
+            z-index: 1;
+        }
+
+        // ********** Brand Promises **********
+        .brand-title {
+            h2 {
+                font-size: 1.25rem;
+                margin:0 0 1rem;
+            }
+        }
+
+        .brand-desc {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            margin:0 0 1rem;
+        }
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) { 
+        
+        .left-content {
+            .left-content-image {
+                width: 100%;
+                border-radius: 0;
+                position: relative;
+                top: initial;
+                right: initial;
+
+                .image {
+                    border-radius: 0;
+                    min-height: 25rem;
+                }
+
+                .about-element {
+                    position: absolute;
+                    left: 40%;
+                    bottom: -2rem;
+                    z-index: 5;
+                    height: 3rem;
+                }
+            }
+        }
+
+        .right-content {
+            .right-content-image {
+                width: 100%;
+                border-radius: 0;
+                position: relative;
+                top: initial;
+                right: initial;
+
+                .image {
+                    border-radius: 0;
+                    min-height: 25rem;
+                }
+
+                .about-element {
+                    position: absolute;
+                    right: 25%;
+                    bottom: -2rem;
+                    z-index: 5;
+                    height: 4rem;
+                }
+            }
+        }
+
+        .reviews .review-slider-group .prev_arrow {
+            right:5rem
+        }
+
+        .reviews .review-slider-group .next_arrow {
+            right:1.5rem
+        }
+    }
+
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) { }
+
+    // Large devices (desktops, less than 1200px)
+    @media (max-width: 1199.98px) { 
+        .where_we_work {
+            .where-we-work-element {
+                position: absolute;
+                z-index: 999;
+                top: 0;
+                right: -22rem;
+                width: 66%;
+                height: 100%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-position: right;
+                background-image: url('../assets/images/Services-Element.png');
+            }
+        }
+        
+    }
+
+
+    // Extra small devices (portrait phones, less than 576px)
+    // No media query since this is the default in Bootstrap
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {  }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { 
+        .left-content {
+            .left-content-image {      
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                top: 0;
+                right: 0;
+                width: 50%;
+            }
+        }
+
+        .right-content {
+            .right-content-image {      
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                top: 0;
+                left: 0;
+                width: 50%;
+            }
+        }
+
+        .where_we_work {
+            .where-we-work-element {
+                position: absolute;
+                z-index: 999;
+                top: 0;
+                right: -15rem;
+                width: 55%;
+                height: 100%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-position: right;
+                background-image: url('../assets/images/Services-Element.png');
+            }
+        }
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { 
+        .where_we_work {
+            .where-we-work-element {
+                position: absolute;
+                z-index: 999;
+                top: 0;
+                right: -15rem;
+                width: 46%;
+                height: 100%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-position: right;
+                background-image: url('../assets/images/Services-Element.png');
+            }
+        }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { 
+        .left-content .left-content-image {      
+            width:50%;
+        }
+
+        .right-content .right-content-image {      
+            width:50%;
+        }
+    }
+
+}

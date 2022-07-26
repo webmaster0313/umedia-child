@@ -1,0 +1,608 @@
+.ia-quickstart {
+    margin: 1rem auto;
+    font-family: $avLight;
+    color: #4c4c4c;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin: 0 0 3.5rem;
+
+    ol {
+        list-style: none;
+        counter-reset: li;
+        padding:0;
+
+        li {
+            counter-increment: li;
+            padding: 0 0 2rem 4.5rem;
+            position:relative;
+
+            &:before {
+                content: counter(li)!important;
+                font-size:3rem;
+                padding-right:1.3rem;
+                margin-left:-4.5rem;
+                display:inline-block;
+                line-height:3.25rem;
+                position:absolute;
+            }
+        }
+    }
+
+    ul {
+        border-left:1px solid #979797;
+        padding-left: 3.5rem;
+        list-style: none;
+
+        li {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    ol ul {
+        margin-left: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    ol ul li {
+        padding-left: 0 !important;
+    }
+
+    ol ul li:last-child {
+        padding-bottom:0 !important;
+        margin-bottom:0 !important;
+    }
+
+    ol ul li:before {
+        display: none !important;
+    }
+
+    blockquote {
+        border-left:1px solid #979797;
+        padding-left: 75px;
+    }
+
+
+    .super-body.section-margin {
+        margin: 0rem 0 8rem;
+    }
+
+    strong, b {
+        color: $primary;
+    }
+
+    // ********** Super Body **********
+    .super-body {
+        font-family: $poppins;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        font-weight: 500;
+        border-top: 1px solid $mediumGrey;
+        border-bottom: 1px solid $mediumGrey;
+        padding: 4rem 0;
+
+        strong, b {
+            font-family: $poppins;
+            font-weight: 500;
+            color: $darkGrey !important;
+        }
+    }
+
+    // ********** Approach Section **********
+    .bg-blue {
+        background-color: $primaryBlue;
+    }
+
+    .bg-half-blue {
+        position: relative;
+        background-color: $primaryBlue;
+        background: linear-gradient(180deg, $primaryBlue 50%, white 50%);
+    }
+
+    .approach {
+        margin: 4rem 0 0;
+
+        .bg-blue {
+            color:white;
+        }
+
+        .section-header {
+            padding-top: 8rem;
+
+            .container {
+                position: relative;
+            }
+
+            h2 {
+                font-family: $avBlack;
+                font-size:1.25rem
+            }
+
+            .section-copy {
+                font-family: $poppins;
+                font-size: 1.3rem;
+                line-height: 2rem;
+                font-weight: 200;
+                padding: 0 0 5rem;
+
+                h2 {
+                    font-family: $poppins;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    padding: 0 0 2rem;
+                }
+            }
+
+            .section-element {
+                position: absolute;
+                top: -13.25rem;
+                left: 0;
+                width: 9.5rem;
+                height: 9.5rem;
+                background-size: 9.5rem 9.5rem;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-position: center;
+                background-image: url('../assets/images/blog-element.png');
+            }
+        }
+    }
+
+    // ********** Timeline **********
+    .timeline {
+        padding: 1rem 2rem;
+        .subhead-title {
+            font-family: $poppins;
+            font-weight: 400!important;
+            font-size: 1rem;
+            color: $white;
+        }
+        .page-title {
+            font-family: $poppins;
+            font-weight: 500!important;
+            font-size: 1.025rem;
+            color: $white;
+        }
+    }
+
+    // ********** Project Outline **********
+    .project-outline {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        padding-top: 6rem;
+        h2 {
+            font-family: $poppins;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #4c4c4c;
+            text-transform: uppercase;
+            margin: 0 0 2rem;
+            padding:0rem!important;
+        }
+    }
+
+    // ********** Seperator **********
+    .seperator {
+        border-top: 1px solid $mediumGrey;
+    }
+
+     // ********** Audience **********
+    .audience-tite {
+        h2 {
+            font-family: $poppins;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #4c4c4c;
+            text-transform: uppercase;
+            margin: 2rem 0 2rem;
+            padding: 4rem 0 0;
+        }
+    }
+
+    .left-content {
+        margin-top:8rem;
+        margin-bottom:8rem;
+        padding: 0 0 4rem;
+
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.5rem;
+            color: $darkGrey;
+            margin: 0 0 2rem;
+        }
+
+        .description {
+            color: $darkGrey;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin: 0 0 3.5rem;
+
+            b {
+                font-family: $avHeavy;
+            }
+
+            a {
+                text-decoration: none;
+                color: #4c4c4c;
+                :hover {
+                    text-decoration: none;
+                    color: #4c4c4c;
+                }
+            }
+        }
+
+        .left-content-image {
+            width:48%;
+
+            .image {
+                background-position: left top;
+                border-radius: 3rem 0 0 3rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+            }
+        }
+    }
+
+    .right-content {
+        margin-top:8rem;
+        margin-bottom:8rem;
+        padding: 4rem 0;
+
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.5rem;
+            color: $darkGrey;
+            margin: 0 0 2rem;
+        }
+
+        .description {
+            font-family: $avBlack;
+            color: $darkGrey;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin: 0 0 3.5rem;
+
+            b {
+                font-family: $avHeavy;
+            }
+        }
+
+        .right-content-image {
+            width:48%;
+
+            .image {
+                background-position: center top;
+                border-radius: 0 3rem 3rem 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+            }
+        }
+    }
+
+
+    // ********** Outcome Section **********
+    .outcome-tite {
+        h2 {
+            font-family: $poppins;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #4c4c4c;
+            text-transform: uppercase;
+            margin: 2rem 0 2rem;
+            padding: 2rem 0 0;
+        }
+    }
+    .outcome-story {
+        padding-bottom: 2rem;
+    }
+    .outcome-disclaimer {
+        font-size: 1rem;
+        line-height: 2rem;
+        border-top: 1px solid $mediumGrey;
+        padding: 2rem 1rem;
+        font-style: italic;
+    }
+
+    // ********** Contact Form **********
+    .quickstart-contact {
+        margin: 1rem auto;
+
+        h2 {
+            font-family: $poppins;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #4c4c4c;
+            text-transform: uppercase;
+            margin: 2rem 0 2rem;
+            padding: 2rem 0 0;
+        }
+
+        .form-description {
+            font-family: $avMedium;
+            color: #4C4C4C;
+        }
+
+        ul {
+            border: none;
+        }
+
+        .form.section-margin {
+            margin-bottom: 8rem;
+        }
+
+        .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_wrapper .textarea {
+            background: transparent !important;
+            border: none !important;
+            border-bottom: 1px solid #979797 !important;
+            font-family: $avMedium;
+            font-size: 1.0rem;
+            color: $darkGrey;
+            outline-color: $grey;
+        }
+
+        .gfield_description {
+            font-size: 1rem !important;
+            font-family: $avMedium !important;
+        }
+
+        .gform_fields {
+            position: relative;
+        }
+
+        .gform_footer {
+            padding-top: 2rem !important;
+        }
+
+        .contact-info {
+            font-size: 1.25rem;
+            text-align: right;
+            position: absolute;
+            right: 1.125rem;
+            bottom: -6.25rem;
+        }
+
+        .gform_confirmation_wrapper {
+            font-size: 1.5rem;
+        }
+    }
+
+
+
+
+
+
+
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+
+        .breadcrumb-mobile {
+            padding-left: 2rem!important;
+            margin-top: 0;
+        }
+
+        // ********** Brand Promises **********
+        .capabilities-title {
+            h2 {
+                font-size: 1.25rem;
+                margin:0 0 1rem;
+            }
+        }
+
+        .capabilities-desc {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            margin:0 0 1rem;
+        }
+
+        .left-content {
+            margin: 0;
+            padding: 0;
+
+            .left-content-image {
+
+                .automation-element {
+                    position: absolute;
+                    right: 50%;
+                    bottom: -1.1rem;
+                    z-index: 5;
+                    height: 2.5rem;
+
+                    img {
+                        max-width:initial;
+                        height:100%;
+                    }
+                }
+            }
+        }
+
+        .right-content {
+            margin: 0 0 4rem;
+            padding: 4rem 0 0;
+
+            .description {
+                margin: 0 0 1.5rem;
+            }
+        }
+
+        .project-outline {
+            h2 {
+                font-family: Poppins,"Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-weight: 600;
+                font-size: 1rem;
+                color: #4c4c4c;
+                text-transform: uppercase;
+                margin: 2rem 0 2rem;
+                padding: 4rem 0 0;
+            }
+        }
+
+        .outcome-disclaimer {
+            margin: 0!important;
+        }
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+        .left-content {
+            .left-content-image {
+                width: 100%;
+                border-radius: 0;
+                position: relative;
+                top: initial;
+                right: initial;
+
+                .image {
+                    border-radius: 0;
+                    min-height: 25rem;
+                }
+
+                .about-element {
+                    position: absolute;
+                    left: 40%;
+                    bottom: -2rem;
+                    z-index: 5;
+                    height: 3rem;
+                }
+            }
+        }
+
+        .right-content {
+            .right-content-image {
+                width: 100%;
+                border-radius: 0;
+                position: relative;
+                top: initial;
+                right: initial;
+
+                .image {
+                    border-radius: 0;
+                    min-height: 25rem;
+                }
+
+                .about-element {
+                    position: absolute;
+                    right: 25%;
+                    bottom: -2rem;
+                    z-index: 5;
+                    height: 4rem;
+                }
+            }
+        }
+    }
+
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) { }
+
+    // Large devices (desktops, less than 1200px)
+    @media (max-width: 1199.98px) { }
+
+
+    // Extra small devices (portrait phones, less than 576px)
+    // No media query since this is the default in Bootstrap
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {  }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        .left-content {
+            .left-content-image {
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                top: 0;
+                right: 0;
+                width: 35%;
+
+                .automation-element {
+                    position: absolute;
+                    right: 70%;
+                    bottom: -1.1rem;
+                    z-index: 5;
+                    height: 2.5rem;
+
+                    img {
+                        max-width:initial;
+                        height:100%;
+                    }
+                }
+            }
+        }
+        .right-content {
+            .right-content-image {
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                top: 0;
+                left: 0;
+                width: 48%;
+            }
+        }
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        .left-content {
+            .left-content-image {
+                .automation-element {
+                    position: absolute;
+                    right: 72%;
+                    bottom: -1.1rem;
+                    z-index: 5;
+                    height: 2.5rem;
+
+                    img {
+                        max-width:initial;
+                        height:100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        .left-content {
+            .left-content-image {
+                width:35%;
+                .automation-element {
+                    position: absolute;
+                    right: 78%;
+                    bottom: -1.1rem;
+                    z-index: 5;
+                    height: 2.5rem;
+
+                    img {
+                        max-width:initial;
+                        height:100%;
+                    }
+                }
+            }
+        }
+        .right-content .right-content-image {
+            width:48%;
+        }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1440px) {
+        .left-content {
+            .left-content-image {
+                width:35%;
+                .automation-element {
+                    position: absolute;
+                    right: 86%;
+                    bottom: -1.1rem;
+                    z-index: 5;
+                    height: 2.5rem;
+
+                    img {
+                        max-width:initial;
+                        height:100%;
+                    }
+                }
+            }
+        }
+    }
+}

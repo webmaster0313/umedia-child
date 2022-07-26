@@ -1,0 +1,253 @@
+
+.leadership {
+    .leadership-card {
+        width: auto;
+        min-height: 10rem;
+        border-radius: 2rem;
+        position: relative;
+        z-index: 1;
+        
+        &:hover {
+            cursor: pointer;
+
+            &:before {
+                opacity: 1;
+            }
+            .info {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 2rem;
+            background: rgba(216,213,197, 0.68);
+            z-index: 3;
+            transition: 0.5s;
+            opacity: 0;
+        }	
+
+        .leadership-image {
+            width: 100%;
+            height: 25rem;
+            border-radius: 2rem;
+            background-color: transparent;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 2;
+        }
+
+        .info {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 3;
+            color: white;
+            opacity: 0;
+            transform: translateY(2rem);
+            transition: 0.5s;
+            width: 100%;
+            height: 100%;
+
+            .content {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 1.5rem;
+            
+                h2 {
+                    margin: 0px;
+                    font-family: $avBlack;
+                    font-size: 1rem;
+                    color: $primaryBlue;
+                }
+        
+                p {
+                    font-size: 1rem;
+                    font-family: $avLight;
+                    color: $primaryBlue;
+                }
+                
+                button {
+                    padding: 0.625rem;
+                    outline: none;
+                    border: none;
+                    border-radius: 0.25rem;
+                    background: white;
+                    color: black;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        background: dodgerblue;
+                        color: white;
+                    }
+                }
+                
+                img {
+                    width: 15%;
+                    height: auto;
+                    position: relative;
+                    display: inline-block;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .leadership-card-info {
+        padding: 2.5rem 0 2.5rem;
+        
+        h2 {
+            color: $primaryBlue;
+            font-family: $avBlack;
+            font-size: 1.25rem;
+            margin-bottom: 0;
+        }
+        
+        span {
+            color: $primaryBlue;
+            font-family: $avLight;
+            font-size: 1.25rem;
+        }
+    }
+
+    .leadership-empty {
+        overflow: visible;
+        width: 100%;
+        height: 25rem;
+        background-repeat: no-repeat;
+        background-size: 75% auto;
+        background-color: transparent;
+        background-position: center right;
+        background-image: url('../assets/images/full-circle-element.png');
+
+        & + .leadership-empty {
+            background-position: center left;
+            background-image: url('../assets/images/half-circle-element.png');
+        }
+    }
+
+    .location-leadership-empty {
+        transform: scaleX(-1);
+        overflow: visible;
+        width: 100%;
+        height: 25rem;
+        position: relative;
+        top: 4rem;
+        left: 4rem;
+        background-repeat: no-repeat;
+        background-size: 77% auto;
+        background-color: transparent;
+        background-position: center right;
+        background-image: url('../assets/images/half-circle-element.png');
+    }
+
+}
+
+// .full-circle-element {
+//     position: absolute;
+//     z-index: 999;
+//     top: 115rem;
+//     float: right;
+//     right: 0px;
+//     z-index: 1;
+//     height: 22rem;
+// }
+
+// .half-circle-element {
+//     position: absolute;
+//     z-index: 999;
+//     top: 164rem;
+//     float: left;
+//     left: 0px;
+//     z-index: 1;
+//     height: 22rem;
+// }
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+    .leadership {
+        .leadership-card {
+
+            .leadership-image {
+                background-position: top center;
+            }
+
+            .leadership-card-info {
+                h2 {
+                    font-size: 1.5rem;
+                }
+                
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+
+    // .full-circle-element {
+    //     display: none !important;
+    // }
+    
+    // .half-circle-element {
+    //     display: none !important;
+    // }
+}
+
+@media (max-width: 767.97px) { 
+//    .full-circle-element {
+//       display: none !important;
+//    }
+   
+//    .half-circle-element {
+//       display: none !important;
+//    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {  }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.99px) { 
+    // .half-circle-element {
+    //     position: absolute;
+    //     z-index: 999;
+    //     top: 200rem;
+    //     float: left;
+    //     left: 0px;
+    //     z-index: 1;
+    //     height: 22rem;
+    // }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1200px) { 
+    // .half-circle-element {
+    //     position: absolute;
+    //     z-index: 999;
+    //     top: 150rem;
+    //     float: left;
+    //     left: 0px;
+    //     z-index: 1;
+    //     height: 19rem;
+    // }
+}

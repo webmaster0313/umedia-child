@@ -1,0 +1,48 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+//
+// Color system
+$white: #FFFFFF;
+$primary: #F27700;
+$darkPrimary: #a65100;
+$grey: #A2A2A2;
+$mediumGrey: #979797;
+$darkGrey: #4C4C4C;
+$primaryBlue: #2E3041;
+$greige: #D8D5C5;
+$lightGreige: #EAE9E1;
+
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+   font-family: 'AvenirLight';
+   src: url('https://beta.udigstudio.com/wp-content/themes/umedia-child/fonts/Avenir-Light-07.ttf');
+   font-weight: 200;
+}
+@font-face {
+   font-family: 'AvenirMedium';
+   src: url('https://beta.udigstudio.com/wp-content/themes/umedia-child/fonts/Avenir-Medium-09.ttf');
+   font-weight: 500;
+}
+@font-face {
+   font-family: 'AvenirBlack';
+   src: url('https://beta.udigstudio.com/wp-content/themes/umedia-child/fonts/Avenir-Black-03.ttf');
+   font-weight: 900;
+}
+@font-face {
+   font-family: 'AvenirHeavy';
+   src: url('https://beta.udigstudio.com/wp-content/themes/umedia-child/fonts/Avenir-Heavy-05.ttf');
+   font-weight: 800;
+}
+
+// Font Families
+$poppins: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$avLight: 'AvenirLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$avMedium: 'AvenirMedium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$avBlack: 'AvenirBlack', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$avHeavy: 'AvenirHeavy', 'Helvetica Neue', Helvetica, Arial, sans-serif;

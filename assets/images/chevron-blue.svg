@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="16px" viewBox="0 0 26 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>chevron</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="BLOG" transform="translate(-1381.000000, -764.000000)" stroke="#2E3041" stroke-width="4.4">
+            <g id="Group-2" transform="translate(1036.000000, 726.000000)">
+                <polyline id="chevron" points="348 41 358 51 368 41"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,154 @@
+.contact {
+    margin: 1rem auto;
+
+/*    .titlebar {
+        position: relative;
+        width:initial;
+
+        .primary-bar-extension {
+            background-color: $primary;
+            width:4rem;
+            height:100%;
+            position:absolute;
+            right:100%;
+            top:0;
+        }
+    }
+*/
+    .careers-language {
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+
+    .form.section-margin {
+        margin-bottom: 8rem;
+    }
+
+    h2 {
+        font-family: $avBlack;
+        font-size:1.25rem
+    }
+
+    h3 {
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 1rem;
+        color: $darkGrey;
+        text-transform: uppercase;
+        line-height: 0;
+        vertical-align: text-bottom;
+    }
+
+    .hq-marker {
+        background-color: $primary;
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        color: white;
+        border-radius: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .description {
+        font-family: $avLight;
+        color: $darkGrey;
+        line-height: 1.75rem;
+        font-size: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .location {
+        margin-bottom: 3rem;
+    }
+
+    a.directions {
+        color: $darkGrey;
+        text-decoration: none;
+        
+        &:hover {
+            color: $darkPrimary;
+            text-decoration: underline;
+        }
+    }
+
+    .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_wrapper .textarea {
+        background: transparent !important;
+        border: none !important;
+        border-bottom: 1px solid #979797 !important;
+    }
+
+    .gfield_description {
+        font-size: 1rem !important;
+    }
+
+    .gform_fields {
+        position: relative;
+    }
+
+    .gform_footer {
+        padding-top: 2rem !important;
+    }
+
+    .contact-info {
+        font-size: 1.25rem;
+        text-align: right;
+        position: absolute;
+        right: 1.125rem;
+        bottom: -6.25rem;
+    }
+}
+
+// ********** Mobile CSS Views **********
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .contact {
+        .greige-section {
+            border-radius: 0;
+        }
+    }
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+    .contact {
+        .contact-info {
+            font-size: 1.25rem;
+            margin-top: 2rem;
+            text-align: left;
+            position: absolute;
+            left: 0;
+            bottom: -12.25rem;
+        }
+
+        .gform_wrapper {
+            margin-bottom:4rem;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

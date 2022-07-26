@@ -1,0 +1,84 @@
+@import "theme/child_theme_variables";                   // <------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "assets/bootstrap4";                             // <------- Loads Bootstrap4
+@import "../src/sass/umedia/umedia/umedia";  // <------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+@import "../src/sass/umedia/umedia/woocommerce"; // <------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+// Optional files - If you don´t use the corresponding scripts/fonts comment em out
+@import "assets/font-awesome";                           // <------- Font Awesome Icon font
+@import "assets/underscores";                            // <------- Underscores media styles
+
+// Any additional imported files //
+@import "theme/child_theme";                             // <------- Add your styles into this file
+@import "../src/sass/umedia/theme/contact-form7";    // <------- Loads some basic styling for contact form 7 plugin
+
+
+// Partials
+@import "theme/partials/header"; 
+@import "theme/partials/nav"; 
+@import "theme/partials/footer";
+@import "theme/partials/hero";
+//@import "theme/partials/blog";
+@import "theme/partials/post";
+@import "theme/partials/work-post";
+@import "theme/partials/location";
+@import "theme/partials/search";
+
+// Pages
+@import "theme/partials/pages/home";   
+@import "theme/partials/pages/leadership";
+@import "theme/partials/pages/blog";
+@import "theme/partials/pages/work";
+@import "theme/partials/pages/contact";
+@import "theme/partials/pages/careers";
+@import "theme/partials/pages/about";
+@import "theme/partials/pages/services";
+
+#wpadminbar + #page {
+    .fixed-top, .sticky {
+        top:2rem;
+    }
+}
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 781.98px) { 
+    #wpadminbar + #page {
+        .fixed-top, .sticky {
+            top:2.875rem;
+        }
+    }
+}
+
+#main {
+    overflow: hidden;
+}
+
+// ********** Mobile CSS Views **********
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {  }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

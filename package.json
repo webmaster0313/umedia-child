@@ -1,0 +1,61 @@
+{
+  "name": "umedia-child",
+  "version": "0.5.5",
+  "description": "Basic Child Theme for UnderStrap Theme Framework: https://github.com/holger1411/umedia",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "gulp copy-assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holger1411/umedia-child.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "framework",
+    "bootstrap",
+    "underscores"
+  ],
+  "author": "Holger Koenemann",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/holger1411/umedia-child/issues"
+  },
+  "homepage": "https://umedia.com",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.3",
+    "del": "^4.1.0",
+    "font-awesome": "^4.7.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-clone": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-ignore": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-install": "^1.1.0",
+    "gulp-merge": "^0.1.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-rimraf": "^0.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "jquery": "^1.9.1",
+    "merge2": "^1.2.3",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.15.0",
+    "run-sequence": "^2.2.1",
+    "umedia": "^0.9.1",
+    "undescores-for-npm": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp-plumber": "^1.2.1"
+  }
+}

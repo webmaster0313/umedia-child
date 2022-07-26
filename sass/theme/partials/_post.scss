@@ -1,0 +1,192 @@
+.blog-post {
+    border-top:1px solid $primaryBlue;
+    font-size: 1.25rem;
+    line-height:2rem;
+    padding-top:6rem;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top:3.5rem;
+        margin-bottom:1.5rem;
+    }
+
+    h1 {
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: $darkGrey;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        font-family: $avBlack;
+
+    }
+
+
+    h3 {
+        font-size: 1.5rem;
+        font-family: $avBlack;
+
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+    img {
+        margin-bottom: 3rem;
+    }
+
+    //Gives padding to the first item in the blog so we can make the first letter special.
+    > * {
+        padding-left:5.5rem;
+    }
+
+    //Cancels the padding for the other siblings.
+    > * ~ *:not(ul) {
+        padding-left:0rem;
+    }
+
+    ul, ol {
+        padding-left:revert;
+        margin:3rem 0;
+    }
+
+    &::first-letter {
+        color:white;
+        display:inline-block;
+        background-color: $primary;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        font-size: 4rem;
+        margin-right:1rem;
+        margin-left:-5.7rem;
+    }
+
+    ol {
+        list-style: none;
+        counter-reset: li;
+        padding:0;
+
+        li {
+            counter-increment: li;
+            padding: 0 0 2rem 4.5rem;
+            position:relative;
+
+            &:before {
+                content: counter(li)!important;
+                font-size:3rem;
+                padding-right:1.3rem;
+                margin-left:-4.5rem;
+                display:inline-block;
+                line-height:3.25rem;
+                position:absolute;
+            }
+        }
+    }
+
+    ul {
+        border-left:1px solid #979797;
+        padding-left: 3.5rem;
+        list-style: none;
+
+        li {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    blockquote {
+        border-left:1px solid #979797;
+        padding-left: 75px;
+    }
+
+}
+
+.author {
+    background: $lightGreige;
+    position:relative;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
+    padding:4rem;
+    font-size: 20px;
+    line-height:32px;
+    margin-top:2rem;
+    margin-bottom:8rem;
+    z-index:1;
+
+    .badge-photo {
+        border-radius:25px;
+        width: 150px;
+        height: 150px;
+        background-size: cover!important;
+        background-position: center!important;
+    }
+
+    .image img {
+        border-radius:25px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    h4 {
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      margin-bottom: 18px;
+    }
+    
+    .greige-side {
+        background: $lightGreige;
+        position:absolute;
+        top:0;
+        left:100%;
+        width:100%;
+        height:100%;
+        z-index:100;
+    }
+}
+
+// ********** Mobile CSS Views **********
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .blog-post {
+        font-size: 16px;
+        line-height:28px;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    .author {
+        border-radius:0px;
+        width:100%;
+        max-width:100%;
+        margin-right:0;
+        margin-left:0;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+   
+ }

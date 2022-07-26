@@ -1,0 +1,381 @@
+html {
+    background: $primaryBlue;
+    font-size: 14px !important;
+}
+
+body {
+    background: white;
+}
+
+html, body {
+    color: $darkGrey;
+    font-family: $avLight;
+    font-size: 1rem;
+}
+
+.wrapper-home {
+    padding: 4.5rem 0 0;
+}
+
+.wrapper {
+    padding: 10rem 0 2.5rem;
+
+    &.location {
+        padding: 5rem 0;
+        margin-top: 4rem;
+    }
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+.text-blue {
+    color: $primaryBlue !important;
+}
+
+.bg-greige {
+    background-color: $greige;
+}
+
+.section-margin {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.titlebar {
+    background:$primary; 
+    border-radius: 0 5rem 5rem 0; 
+    margin-top: 0;
+    position: relative;
+    width:initial;
+
+    .primary-bar-extension {
+        background-color: $primary;
+        width: 4rem;
+        height: 100%;
+        position: absolute;
+        right: 100%;
+        top: 0;
+    }
+    
+    .page-title {
+        font-family: $poppins;
+        font-weight: 600!important;
+        font-size: 1.5rem;
+        color: $white; 
+        padding: 1.5rem 2rem;
+    }
+}
+
+// .container .page-title {
+//     padding-left: 2rem !important;
+// }
+
+.breadcrumb {
+    padding: 2rem 1rem;
+    margin-bottom: 1.25rem;
+    list-style: none;
+    background-color: transparent!important;
+    border-radius: 0.25rem;
+    color: $primaryBlue;
+    font-family: $avLight;
+    font-size: 1.25rem;
+
+    &.blog {
+        padding: 2rem 2.5rem;
+    }
+
+    &.location {
+        padding: 2rem 0;
+        margin-bottom: 0;
+    }
+}
+
+.breadcrumb a {
+    color: $primary;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@keyframes fadeInLeft {
+    from { 
+        transform: translateX(200px); 
+        opacity: 0; 
+    }
+    to { 
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+ }
+
+.btn-grad, .gform_button {
+    background-color: $primaryBlue;
+    display: inline-block;
+    padding: 0.75rem 2rem !important;
+    text-align: center !important;
+    transition: 0.5s !important;
+    color: $white !important;            
+    box-shadow: 0 0 1.25rem #eee !important;
+    border-radius: 4rem !important;
+    font-weight: 500 !important;
+    font-size: 0.8rem !important;
+    font-family: $poppins !important;
+    cursor: pointer !important;
+    border:none !important;
+
+    &:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: $white;
+        text-decoration: none;
+        background-color:  #565a79;
+    }
+ }
+
+ // Load More Button For posts.  Located on index.php
+ .misha_loadmore {
+    margin: 4rem auto 1rem auto;
+    width: 195px;
+    text-align: center;
+    font-family: $poppins !important;
+    background-color: $primary;
+    color: #ffffff;
+    border-radius: 50px;
+    border:none;
+    outline: none!important;
+	display: block;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing:1px;
+	cursor:pointer;
+	padding: 0.8rem 0;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;  
+}
+.misha_loadmore:hover {
+    background-color:  rgba(234,147,68, 1);
+    color: #fff;
+    outline: none!important;
+}
+
+// category select option
+.select {
+    width: 100% !important;
+    background: #B8B8B8 !important;
+    border-radius: 50px !important;
+    padding: 1rem 2rem !important;
+    color: $primaryBlue !important;
+    font-family: $poppins !important;
+    font-weight: 500 !important;
+    font-size: 23px !important;
+    border: none !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+    background: url(https://beta.udigstudio.com/udig-2020/wp-content/themes/umedia-child/assets/images/chevron-blue.svg) no-repeat #B8B8B8!important;
+    //background: url(http://localhost:3000/udig-2020/wp-content/themes/umedia-child/assets/images/chevron-blue.svg) no-repeat right #B8B8B8;
+    //background-position-x: 300px;
+    background-position: 92% !important;
+}
+
+.alm-filter--toggle {
+    width: 100% !important;
+    border-radius: 50px !important;
+    padding: 1rem 2rem !important;
+    color: $primaryBlue !important;
+    font-family: $poppins !important;
+    font-weight: 500 !important;
+    font-size: 23px !important;
+    border: none !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+    //background: url(http://localhost:3000/udig-2020/wp-content/themes/umedia-child/assets/images/chevron-white.svg) no-repeat $primaryBlue!important;
+    background: #B8B8B8 !important;
+    background-position: 92% !important;
+    z-index: 9;
+}
+.alm-filters-container .alm-filter--title .alm-filter--toggle:after {
+    right: 35px !important;
+}
+
+.alm-filters-container .alm-filter--inner {
+    padding: 0rem;
+    position: relative;
+    top: -42px !important;
+    z-index: 1;
+}
+.alm-filters-container .alm-filter ul {
+    padding: 4.5rem 2rem 2.5rem !important;
+    margin: 0;
+    background: #E3E3E3;
+    border-radius: 0 0 43px 43px;
+    -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.095) !important;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.095) !important;
+}
+.alm-filters-container .alm-filter li {
+    margin: 0 0 1rem!important;
+}
+.alm-filters-container .alm-filter li div.alm-filter--link {
+    font-size: 1.2rem!important;
+}
+  
+.alm-filters-container .alm-filter--title .alm-filter--toggle:before {
+    border: solid $primaryBlue !important;
+    border-top-color: $primaryBlue !important;
+    border-width: 0 0.25rem 0.25rem 0 !important;
+    display: inline-block !important;
+    padding: 6px !important;
+    top: calc(24% + 0.25rem) !important;
+    -webkit-transform: rotate(-45deg) !important;
+    transform: rotate(45deg) !important;
+}
+.alm-filters-container .alm-filter--title .alm-filter--toggle:after {
+    border: solid $primaryBlue !important;
+    border-top-color:$primaryBlue !important;
+    border-width: 0 0.25rem 0.25rem 0 !important;
+    display: inline-block !important;
+    padding: 6px !important;
+    top: calc(24% + 0.25rem) !important;
+    -webkit-transform: rotate(-135deg) !important;
+    transform: rotate(45deg) !important;
+}
+
+.greige-section {
+    position:relative;
+    border-radius:5.625rem 0 0 5.625rem;
+    background-color: $lightGreige;
+
+    .greige-section-extension {
+        background-color: $lightGreige;
+        position:absolute;
+        left:100%;
+        top:0;
+        width:2rem;
+        height:100%;
+    }
+}
+
+// For Select Filter Drop Down in Works Page
+.alm-filter--categoryand {
+    position: absolute !important;
+    float: left !important;
+    display: block !important;
+    margin-right: 1rem !important;
+    width: 65%;
+    z-index: 999 !important;
+}
+.alm-filter--category{
+    position: absolute !important;
+    float: left !important;
+    display: block !important;
+    margin-right: 1rem !important;
+    width: 65%;
+    z-index: 999 !important;
+}
+.alm-load-more-btn.done{
+    display: none;
+}
+
+.imgvideo {
+    cursor: pointer;
+}
+ 
+.playbutton {
+    z-index: 10;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+ 
+.ytvideo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    cursor: pointer;
+    height: 30rem !important; 
+}
+ 
+.ytvideo iframe {
+    border-style: none;
+    height: 100%;
+    width: 100%;
+}
+ 
+.ytvideo .seo {
+    display: none;
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .breadcrumb {
+        margin-top:-2rem;
+        font-size:1rem;
+        padding-bottom:1.5rem;
+    }
+
+    .alm-filter--categoryand {
+        position: relative!important;
+        float: left!important;
+        display: block!important;
+        margin-right: 1rem!important;
+        width: 100%;
+        z-index: 999;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    .alm-filter--categoryand {
+        position: relative!important;
+        float: left!important;
+        display: block!important;
+        margin-right: 1rem!important;
+        width: 100%;
+        z-index: 999;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  
+   
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+    
+ }
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    html {
+        font-size: 16px !important;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .container {
+        max-width: 960px;
+    }
+}

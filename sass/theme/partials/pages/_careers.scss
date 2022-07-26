@@ -1,0 +1,546 @@
+.careers-page {
+    margin: 1rem auto;
+
+    .super-body.section-margin {
+        margin: 3rem auto;
+    }
+
+    #listings.section-margin {
+        margin: 8rem auto;
+    }
+
+    strong, b {
+        color: $primary;
+    }
+
+/*  .titlebar {
+        position: relative;
+        width: initial;
+
+        .primary-bar-extension {
+            background-color: $primary;
+            width: 4rem;
+            height: 100%;
+            position: absolute;
+            right: 100%;
+            top: 0;
+        }
+    }
+*/
+    .careers-language {
+        font-size: 1.25rem;
+
+        #postings-cta:hover {
+            cursor: pointer;
+            opacity: 0.75;
+            text-decoration: underline;
+        } 
+    }
+    
+    .careers-hero-image {
+        min-height: 31.75rem;
+        background-image: url('https://via.placeholder.com/1382x870');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: center;
+    }
+
+    .super-body {
+        font-family: $poppins;
+        font-size: 1.1rem;
+        line-height: 2rem;
+        font-weight: 300;
+        border-top: 1px solid $mediumGrey;
+        border-bottom: 1px solid $mediumGrey;
+        padding: 4rem 0;
+
+        strong, b {
+            font-family: $poppins;
+            font-weight: 500;
+            color: $darkGrey !important;
+        }
+    }
+
+    .mid-title {
+        margin: 6rem 0 10rem;
+
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.75rem;
+            text-align: center;
+        }
+    }
+
+    .bg-blue {
+        background-color: $primaryBlue;
+    }
+
+    .bg-half-blue {
+        position: relative;
+        background-color: $primaryBlue;
+        background: linear-gradient(180deg, $primaryBlue 50%, white 50%);
+    }
+
+    .life-at-udig {
+        margin: 4rem 0 0;
+
+        .bg-blue {
+            color:white;
+        }
+
+        .section-header {
+            padding-top: 8rem;
+
+        .container {
+            position: relative;
+        }
+
+        h2 {
+            font-family: $avBlack;
+            font-size:1.25rem
+        }
+
+        .section-copy {
+            font-family: $poppins;
+            font-size: 1.25rem;
+            line-height: 2.5rem;
+            font-weight: 200;
+            padding: 2rem 0;
+        }
+
+        .section-element {
+            position: absolute;
+            top: -13.25rem;
+            left: 0;
+            width: 9.5rem;
+            height: 9.5rem;
+            background-size: 9.5rem 9.5rem;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            background-position: center;
+            background-image: url('../assets/images/blog-element.png');
+        }
+    }
+
+    .card-stack {
+        .card {
+            border-radius: 2.5rem;
+            background:$greige;
+            height: 100%;
+
+            .card-image {
+                text-align:center;
+                padding:2rem 4rem 0;
+
+                img {
+                    margin:0 auto;
+                    width:auto;
+                    // Used pixels to maintain an exact size limit regardless of breakpoint values. - ELH
+                    max-width:100px;
+                }
+
+            }
+
+            .card-header {
+                font-family: $poppins;
+                text-transform: uppercase;
+                font-size: 0.875rem;
+                font-weight: 600;
+                padding: 1.5rem 1.5rem 1rem;
+                background-color: transparent;
+                border: none !important;
+            }
+
+            .card-body {
+                font-family: $avLight;
+                font-size: 1rem;
+                line-height:1.5rem;
+                padding: 0 1.5rem 3rem;
+            }
+        }
+    }
+}
+
+.listings { 
+    background: $lightGreige;
+    position:relative;
+    border-top-left-radius:3.5rem;
+    border-bottom-left-radius:3.5rem;
+    padding:4rem;
+
+    .listings-extension {
+        background: $lightGreige;
+        position:absolute;
+        top:0;
+        left:100%;
+        width:2rem;
+        height:100%;
+        z-index:100;
+    }
+
+}
+
+// ********** Careers Section **********
+
+.left-content {
+    margin-top:5rem;
+    margin-bottom:5rem;
+
+    h2 {
+        font-family: $avBlack;
+        font-size:1.25rem;
+        color: $darkGrey;
+        margin: 0 0 3rem;
+    }
+
+    .description {
+        font-family: $avLight;
+        color: $darkGrey;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        margin: 0 2rem 3rem 0;
+
+        b {
+            font-family: $avHeavy;
+        }
+    }
+
+    .left-content-image {
+        width:50%;
+
+        .image {
+            background-position: right center;
+            border-radius: 3rem 0 0 3rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+            
+        .careers-element {
+            position: absolute;
+            right: 90%;
+            bottom: 1.5rem;
+            z-index: 5;
+            height: 2rem;
+
+            img {
+                max-width:initial;
+                height:100%;
+            }
+        }
+    }
+}
+
+// ********** Careers Section **********
+
+.right-content {
+    margin-top:10rem;
+
+    h2 {
+        font-family: $avBlack;
+        font-size:1.25rem;
+        color: $darkGrey;
+        margin: 0 0 3rem;
+    }
+
+    .description {
+        font-family: $avLight;
+        color: $darkGrey;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        margin: 0 0 3rem;
+
+        b {
+            font-family: $avHeavy;
+        }
+    }
+
+    .btn-grad {
+        display: inline-block;
+    }
+
+    .right-content-image {
+        width:50%; 
+
+        .image {
+            background-position: left center;
+            border-radius: 0 3rem 3rem 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .careers-element {
+            position: absolute;
+            right: 90%;
+            bottom: 2rem;
+            z-index: 5;
+            height: 2rem;
+
+            img {
+                max-width: initial;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// ********** Reviews Section **********
+.reviews {
+    position: relative;
+    margin-bottom: 4rem;
+
+    .reviews-title {
+        padding: 4rem 2.5rem 2rem;
+        
+        h2 {
+            font-family: $avBlack;
+            font-size: 1.25rem;
+            color: white;
+            margin: 0;
+        }
+    }
+
+    .large-padding {
+        padding: 0 0 4rem;
+    }
+
+    .reviews-logo {
+        border-right: 1px solid white;
+        padding: 0 2.5rem;
+
+        img {
+            max-width:6rem;
+        }
+    }
+    
+    .review-slider-group {
+        padding-top: 2rem;
+        z-index: 999;
+
+        .slider-item {
+            padding: 0 1.5rem;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin-bottom: 1.5rem;
+            width: 100%;
+            color: white; 
+        }
+
+        .prev_arrow, .next_arrow {
+            position: absolute;
+            color: white;
+            display: inline-block;
+            cursor: pointer;
+            top: -5rem !important;
+    
+            :hover {
+                color: #647487
+            }
+        }
+
+        .prev_arrow {
+            right: 3.5rem;
+        }
+
+        .next_arrow {
+            right: 0rem;
+        }
+
+        .slick-dotted.slick-slider {
+            margin-bottom: 2rem;
+        }
+
+        .slick-dots {
+            position: absolute;
+            bottom: -1.5rem;
+            display: block;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+
+            li {
+                position: relative;
+                display: inline-block;
+                width: 0.75rem;
+                height: 0.75rem;
+                margin: 0 0.25rem;
+                padding: 0;
+                cursor: pointer;
+                
+                button {
+                    font-size: 0;
+                    line-height: 0;
+                    display: block;
+                    width: 0.75rem;
+                    height: 0.75rem;
+                    padding: 0.25rem;
+                    cursor: pointer;
+                    color: transparent;
+                    border: 0;
+                    outline: none;
+                    background: transparent;
+        
+                    &:hover,
+                    &:focus {
+                        outline: none;
+                    }
+                        
+                    &:hover:before,
+                    &:focus:before {
+                        opacity: 1;
+                    }
+
+                    &:before {
+                        font-family: 'slick';
+                        font-size: 1.5rem;
+                        line-height: 0.5rem;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0.75rem;
+                        height: 0.75rem;
+                        content: '';
+                        text-align: center;
+                        opacity: 0.75;
+                        color: transparent;
+                        border: 3px solid #979797;
+                        border-radius: 50%;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                    }
+                }
+
+                &.slick-active button:before {
+                    opacity: 0.75;
+                    background-color: #979797;
+                }
+            }
+        }
+    }
+}
+
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) { 
+        .reviews {
+            .reviews-logo {
+                border-right: hidden;
+            }
+        }
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) { 
+        .left-content {
+            .left-content-image {
+                width: 100%;
+                border-radius: 0;
+                position: relative;
+                top: initial;
+                right: initial;
+
+                .image {
+                    border-radius: 0;
+                    min-height: 25rem;
+                }
+
+                .careers-element {
+                    position: absolute;
+                    left: 40%;
+                    bottom: -2rem;
+                    z-index: 5;
+                    height: 3rem;
+                }
+            }
+        }
+
+        .right-content {
+            .right-content-image {
+                width: 100%;
+                border-radius: 0;
+                position: relative;
+                top: initial;
+                right: initial;
+
+                .image {
+                    border-radius: 0;
+                    min-height: 25rem;
+                }
+
+                .careers-element {
+                    position: absolute;
+                    right: 25%;
+                    bottom: -2rem;
+                    z-index: 5;
+                    height: 4rem;
+                }
+            }
+        }
+
+        .reviews {
+            .review-slider-group {
+                .prev_arrow {
+                    right:5rem
+                }
+
+                .next_arrow {
+                    right:1.5rem
+                }
+            }
+        }
+    }
+
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) {  }
+
+    // Large devices (desktops, less than 1200px)
+    @media (max-width: 1199.98px) {  }
+
+    // Extra small devices (portrait phones, less than 576px)
+    // No media query since this is the default in Bootstrap
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {  }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { 
+        .left-content {
+            .left-content-image {      
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                top: 0;
+                right: 0;
+                width: 50%;
+            }
+        }
+
+        .right-content {
+            .right-content-image {      
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                top: 0;
+                left: 0;
+                width: 50%;
+            }
+        }
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {  }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { 
+        .left-content .left-content-image {      
+            width:50%;
+        }
+
+        .right-content .right-content-image {      
+            width:50%;
+        }
+    }
+
+}

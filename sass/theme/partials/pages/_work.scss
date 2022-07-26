@@ -1,0 +1,317 @@
+.full-circle-element-work {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    z-index: 1;
+    width: 15.625rem;
+}
+
+.work-header {
+    padding: 2rem 3rem 2rem;
+    margin: 4rem 0 3rem;
+
+    .select {
+        width: 100% !important;
+        border-radius: 4rem !important;
+        padding: 1rem 2rem !important;
+        color: #FFFFFF !important;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+        font-weight: 500 !important;
+        font-size: 1.5rem !important;
+        border: none !important;
+        outline: none !important;
+        -webkit-appearance: none !important;
+        background: url(http://localhost:3000/udig-2020/wp-content/themes/umedia-child/assets/images/chevron-white.svg) no-repeat $primaryBlue !important;
+        background-position: 92% !important;
+    }
+
+    .alm-filter--toggle {
+        width: 100% !important;
+        border-radius: 4rem !important;
+        padding: 1rem 2rem !important;
+        color: #FFFFFF !important;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+        font-weight: 500 !important;
+        font-size: 1.5rem !important;
+        border: none !important;
+        outline: none !important;
+        -webkit-appearance: none !important;
+        //background: url(http://localhost:3000/udig-2020/wp-content/themes/umedia-child/assets/images/chevron-white.svg) no-repeat $primaryBlue !important;
+        background: $primaryBlue !important;
+        background-position: 92% !important;
+        z-index: 9;
+    }
+
+    .alm-filters-container .alm-filter--title .alm-filter--toggle:after {
+        right: 2.25rem !important;
+    }
+
+    .alm-filters-container .alm-filter--inner {
+        padding: 0;
+        position: relative;
+        top: -2.75rem !important;
+        z-index: 1;
+    }
+
+    .alm-filters-container .alm-filter ul {
+        padding: 4.5rem 2rem 2.5rem !important;
+        margin: 0;
+        background: #E3E3E3;
+        border-radius: 0 0 2.75rem 2.75rem;
+        -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.095) !important;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.095) !important;
+    }
+
+    .alm-filters-container .alm-filter li {
+        margin: 0 0 1rem !important;
+    }
+
+    .alm-filters-container .alm-filter li div.alm-filter--link {
+        font-size: 1.25rem !important;
+    }
+      
+    .alm-filters-container .alm-filter--title .alm-filter--toggle:before {
+        border: solid #FFF !important;
+        border-top-color: #FFF !important;
+        border-width: 0 0.25rem 0.25rem 0 !important;
+        display: inline-block !important;
+        padding: 0.5rem !important;
+        top: calc(24% + 0.25rem) !important;
+        -webkit-transform: rotate(-45deg) !important;
+        transform: rotate(45deg) !important;
+    }
+
+    .alm-filters-container .alm-filter--title .alm-filter--toggle:after {
+        border: solid #FFF !important;
+        border-top-color: #FFF !important;
+        border-width: 0 0.25rem 0.25rem 0 !important;
+        display: inline-block !important;
+        padding: 0.5rem !important;
+        top: calc(24% + 0.25rem) !important;
+        -webkit-transform: rotate(-135deg) !important;
+        transform: rotate(45deg) !important;
+    }
+}
+
+.work-wrapper {
+    padding: 0;
+}
+
+.work-card {
+    width: 100%;
+    position: relative;
+    display:inline-block;
+    transition: 0.4s ease-out;
+    padding: 6rem 0rem;
+    border-bottom: 1px solid #979797 !important;   
+     
+         h2 {
+             font-family: $avBlack;
+             font-weight: 800;
+             color: $primaryBlue;
+             font-size: 1.4rem;
+             padding: .5rem 1rem 0;
+             text-transform: capitalize;
+         }
+ 
+     :hover {
+         text-decoration: none;
+         color: rgba(46,48,66, .68) !important;
+     }
+     
+     .work-image {
+         width: 100%;
+         min-height:220px;
+         height: auto;
+         background-size: cover!important;
+         background-position: center!important;
+         border-radius: 45px;
+     }
+ 
+     img {
+         border-radius: 3rem;
+         min-height: 150px;
+         height: auto;
+         width: 100%;
+         opacity: 1;
+         -webkit-transition: 0.3s ease-in-out;
+         transition: 0.3s ease-in-out;
+     }
+     
+ 
+     .category {
+         font-family: $avLight;
+         color: $primaryBlue;
+         font-size: 1.2rem;
+         font-weight: 500;
+         padding: .5rem 1rem 0;
+     }
+ }
+
+
+ // Extra small devices (portrait phones, less than 570.5rem)
+@media (max-width: 575.98px) {
+    .work-header {
+    padding: 2rem 0em 4rem;
+    margin: 6em 0 0;
+    }
+
+    .work-wrapper {
+    padding: 0rem;
+    }
+
+    .work-card {
+    padding: 5rem 0;
+        h2 {
+        padding: 3.5rem 1rem 0;
+        }         
+        .work-image {
+        width: 95%;
+        min-height:220px;
+        height: auto;
+        background-size: cover!important;
+        background-position: center!important;
+        border-radius: 45px;
+        margin: 0px auto;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {  }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .work-card {
+        padding: 5rem 0;
+        h2 {
+            padding: 3.5rem 1rem 0;
+        }         
+        .work-image {
+            width: 100%;
+            min-height:320px;
+            height: auto;
+            background-size: cover!important;
+            background-position: center!important;
+            border-radius: 45px;
+        }
+     }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .work-card {
+        width: 100%;
+        position: relative;
+        display:inline-block;
+        transition: 0.4s ease-out;
+        padding: 6rem 0rem;
+        border-bottom: 1px solid #979797 !important;   
+         
+             h2 {
+                 font-family: $avBlack;
+                 font-weight: 800;
+                 color: $primaryBlue;
+                 font-size: 1.4rem;
+                 padding: .5rem 1rem 0;
+                 text-transform: capitalize;
+             }
+     
+         :hover {
+             text-decoration: none;
+             color: rgba(46,48,66, .68) !important;
+         }
+         
+         .work-image {
+             width: 100%;
+             min-height:160px;
+             height: auto;
+             background-size: cover!important;
+             background-position: center!important;
+             border-radius: 35px;
+         }
+     
+         img {
+             border-radius: 3rem;
+             min-height: 150px;
+             height: auto;
+             width: 100%;
+             opacity: 1;
+             -webkit-transition: 0.3s ease-in-out;
+             transition: 0.3s ease-in-out;
+         }
+         
+     
+         .category {
+             font-family: $avLight;
+             color: $primaryBlue;
+             font-size: 1.2rem;
+             font-weight: 500;
+             padding: .5rem 1rem 0;
+         }
+     }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .work-card {
+        width: 100%;
+        position: relative;
+        display:inline-block;
+        transition: 0.4s ease-out;
+        padding: 6rem 0rem;
+        border-bottom: 1px solid #979797 !important;   
+         
+             h2 {
+                 font-family: $avBlack;
+                 font-weight: 800;
+                 color: $primaryBlue;
+                 font-size: 1.4rem;
+                 padding: .5rem 1rem 0;
+                 text-transform: capitalize;
+             }
+     
+         :hover {
+             text-decoration: none;
+             color: rgba(46,48,66, .68) !important;
+         }
+         
+         .work-image {
+             width: 100%;
+             min-height:220px;
+             height: auto;
+             background-size: cover!important;
+             background-position: center!important;
+             border-radius: 45px;
+         }
+     
+         img {
+             border-radius: 3rem;
+             min-height: 150px;
+             height: auto;
+             width: 100%;
+             opacity: 1;
+             -webkit-transition: 0.3s ease-in-out;
+             transition: 0.3s ease-in-out;
+         }
+         
+     
+         .category {
+             font-family: $avLight;
+             color: $primaryBlue;
+             font-size: 1.2rem;
+             font-weight: 500;
+             padding: .5rem 1rem 0;
+         }
+     }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

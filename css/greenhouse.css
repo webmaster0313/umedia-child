@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+   font-family: 'AvenirLight';
+   src: url('https://beta.udigstudio.com/wp-content/themes/umedia-child/fonts/Avenir-Light-07.ttf');
+   font-weight: 200;
+}
+
+@font-face {
+   font-family: 'AvenirMedium';
+   src: url('https://beta.udigstudio.com/wp-content/themes/umedia-child/fonts/Avenir-Medium-09.ttf');
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: 'AvenirBlack';
+   src: url('https://beta.udigstudio.com/wp-content/themes/umedia-child/fonts/Avenir-Black-03.ttf');
+   font-weight: 900;
+}
+
+@font-face {
+   font-family: 'AvenirHeavy';
+   src: url('https://beta.udigstudio.com/wp-content/themes/umedia-child/fonts/Avenir-Heavy-05.ttf');
+   font-weight: 800;
+}
+
+html,
+body {
+  font-family: 'AvenirMedium', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  color: #2E3041;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+#submission_received #view-more {
+  text-align: left !important;
+}
+
+.accessible {
+  padding-top: 0 !important;
+}
+
+.accessible #content {
+  line-height: 2rem !important;
+  font-size: 1.25rem !important;
+  color: #4C4C4C;
+}
+
+.accessible #content strong {
+  font-family: 'AvenirBlack', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  display:block;
+  margin: 2rem 0;
+}
+
+#main {
+  padding-bottom: 0 !important;
+}
+
+#wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+#main #wrapper h1 {
+  display: none;
+}
+
+#board_title {
+  font-family: 'AvenirBlack', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size: 1.25rem !important;
+  color: #2E3041 !important;
+  margin-bottom: 2rem !important;
+  letter-spacing: 0 !important;
+  line-height: normal !important;
+  margin-top: 0 !important;
+}
+
+section h3 {
+  color: #2E3041 !important;
+  font-weight: 600 !important;
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size: 0.875rem !important;
+  text-transform: uppercase;
+  margin: 3rem 0 2.5rem !important;
+}
+
+/* unvisited link */
+.opening a:link, .opening a:visited, .opening a:active, .opening a:focus {
+  color:#2E3041 !important; 
+}
+
+/* unvisited link */
+a:link, a:visited, a:active, a:focus, a:hover {
+  color:#E97101 !important; 
+}
+
+/* mouse over link */
+.opening a:hover {
+  color:#E97101 !important; 
+  text-decoration: underline !important;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: underline !important;
+}
+
+.opening a {
+  font-family: 'AvenirBlack', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size: 1.25rem !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.location {
+  font-family: 'AvenirMedium', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size: 1.25rem;
+  line-height: 1.725rem;
+  color: #4C4C4C !important;
+  display: block;
+}
+
+#app_body {
+    max-width: 100% !important;
+    margin: 0 auto;
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.filter-container .filter-label {
+   display: none !important;
+
+}
+
+#application {
+    background-color: #EAE9E1 !important;
+    border-top-left-radius: 3.125rem;
+    border-bottom-left-radius: 3.125rem;
+    padding: 4rem;
+    margin: 4rem 0;
+    max-width: 70%;
+}
+
+/* Single Job Listing */
+#header {
+  margin-bottom: 3rem;
+  padding:0 !important;
+}
+
+.app-title {
+  font-size: 1.75rem;
+  color: #4c4c4c;
+  font-weight: 400;
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  padding: 2.5rem 0;
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  margin-bottom: 4.5rem !important;
+}
+
+.company-name {
+  font-family: 'AvenirMedium', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size: 1.25rem;
+  line-height: 1.725rem;
+  color:#4c4c4c;
+}
+
+.company-name + a {
+  color: #E97101!important;
+  font-size: 1.25rem;
+}
+
+.accessible #submit_app, .accessible #apply_button {
+  background: #2E3041;
+  font-weight: normal;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  border-radius: 2.5rem;
+  transition: background 0.15s ease 0s, border-color 0.15s ease 0s;
+  -webkit-appearance: none;
+}
+
+.accessible #submit_app:hover, .accessible #apply_button:hover {
+  background: rgba(46,48,65,0.6);
+  transition: background 0.15s ease 0s, border-color 0.15s ease 0s;
+}
+
+#submit_app {
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+}
+
+#application .heading {
+  float: left;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  margin-bottom: 2em;
+  margin-top: 0;
+  display: block;
+  font-family: 'AvenirBlack', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  color: #4c4c4c;
+}
+
+#application div.required-fields {
+  float: right;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: #4C4C4C;
+  font-family: 'AvenirMedium', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+#main_fields .asterisk, #custom_fields .asterisk, #demographic_questions .asterisk, #eeoc_fields .asterisk {
+  color: #E97101;
+}
+
+#main_fields div.field label, #eeoc_fields div.field label {
+  font-family: 'AvenirMedium', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #4c4c4c;
+}
+
+/* Styling input fields */
+#main_fields div.field input[type=text], #main_fields div.field textarea, #main_fields div.field .text-field, #main_fields #custom_fields div.field .select2-container-multi, #custom_fields #main_fields div.field .select2-container-multi, #custom_fields div.field input[type=text], #custom_fields div.field textarea, #custom_fields div.field .text-field, #custom_fields div.field .select2-container-multi, #demographic_questions div.field input[type=text], #demographic_questions div.field textarea, #demographic_questions div.field .text-field, #demographic_questions #custom_fields div.field .select2-container-multi, #custom_fields #demographic_questions div.field .select2-container-multi, #eeoc_fields div.field input[type=text], #eeoc_fields div.field textarea, #eeoc_fields div.field .text-field, #eeoc_fields #custom_fields div.field .select2-container-multi, #custom_fields #eeoc_fields div.field .select2-container-multi {
+  margin: 0;
+  padding: 0.25rem;
+  border-bottom: 1px solid #979797;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  font-family: inherit;
+  background: none;
+  margin-left: 1rem;
+}
+
+#main_fields div.field, #custom_fields div.field, #demographic_questions div.field, #eeoc_fields div.field {
+  clear: both;
+  overflow: auto;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+#main hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background-color:#EAE9E1;
+  margin: 1.5rem 0;
+}
+
+#main_fields div.field label, #custom_fields div.field label, #demographic_questions div.field label, #eeoc_fields div.field label {
+  font-family: 'AvenirMedium', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #4c4c4c;
+}
+
+.accessible .select2-container .select2-chosen, .accessible .select2-container .select2-arrow, .accessible .select2-container .select2-choice {
+  background-color: #b8b8b8 !important;
+  line-height: 1.75rem;
+}
+
+.accessible .select2-container .select2-choice {
+    border-radius: 3rem !important;
+    padding: 0.5rem 0rem 0.5rem 1rem !important;
+    color: #2e3041 !important;
+    font-family: 'Poppins',Arial,Helvetica,sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    border: none !important;
+    outline: 0 !important;
+    appearance: caret !important;
+    -moz-appearance: caret !important;
+    -webkit-appearance: caret !important;
+    background-image:  url('https://beta.udigstudio.com/wp-content/themes/umedia-child/assets/images/down-chevron.svg');
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: calc(100% - 13px) calc(100% - 12px);
+    line-height: 1rem;
+}
+
+.accessible .filter-container select {
+  border-radius: 3rem !important;
+  padding: 0.8rem 1rem !important;
+  color: #2e3041 !important;
+  font-family: 'Poppins',Arial,Helvetica,sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  border: none !important;
+  outline: 0 !important;
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  background-color: #b8b8b8 !important;
+  background-image:  url('https://beta.udigstudio.com/wp-content/themes/umedia-child/assets/images/down-chevron.svg');
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: calc(100% - 13px) calc(100% - 10px);
+  line-height: 1rem;
+}
+
+.accessible .filter-container {
+    width: initial !important;
+    height: 3rem;
+    margin-right: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.accessible .select2-container {
+    min-width: 14rem;
+}
+
+.select2-arrow {
+  display:none !important;
+}
+
+.select2-search input, .select2-search-choice-close, .select2-container .select2-choice abbr, .select2-container .select2-choice .select2-arrow b {
+    background-size: 11.5rem 6.25rem !important;
+    background-position: -1rem -0.75rem !important;
+}
+
+.select2-dropdown-open .select2-choice .select2-arrow b {
+  background-position: -4.5rem -0.75rem !important;
+}
+
+.select2-drop {
+  padding: 1.5rem 0.5rem 1.5rem !important;
+  margin: 0 0.1rem !important;
+  background: #e3e3e3 !important;
+  border: none !important;
+  -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.095) !important;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.095) !important;
+  border-radius: 2.75rem !important;
+}
+
+.select2-drop li.select2-result {
+  font-size: 1rem !important;
+  line-height: 1.55rem !important;
+  padding: 0.25rem !important;
+  color: #666 !important;
+  font-family: AvenirLight,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.select2-drop li.select2-result:hover {
+  background: transparent !important;
+  color: #222 !important;
+  cursor: pointer !important;
+}
+
+.select2-drop li.select2-result.select2-highlighted {
+  background: transparent !important;
+  color: #222 !important;
+}
+
+.attach-or-paste {
+  margin-left: 8.3rem;
+}
+
+#main_fields div.field input[type=text], #main_fields div.field textarea, #eeoc_fields div.field input[type=text], #eeoc_fields div.field textarea {
+    width: calc(100% - 10rem);
+}
+
+#custom_fields div.field input[type=text], #custom_fields div.field textarea, #custom_fields div.field .text-field, #custom_fields div.field .select2-container-multi {
+  float: right !important;
+  width: 26.5rem !important;
+}
+
+#custom_fields div.field br {
+  display:none;
+}
+
+/* ********** Mobile CSS Views ********** */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  html {
+    font-size:16px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/*** iPhone and iOS Form Input Zoom Fixes ***/
+/* Fix Input Zoom on devices older than iPhone 5: */
+@media screen and (device-aspect-ratio: 2/3) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"]{ font-size: 1rem; }
+}
+
+/* Fix Input Zoom on iPhone 5, 5C, 5S, iPod Touch 5g */
+@media screen and (device-aspect-ratio: 40/71) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"]{ font-size: 1rem; }
+}
+
+/* Fix Input Zoom on iPhone 6, iPhone 6s, iPhone 7  */
+@media screen and (device-aspect-ratio: 375/667) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"]{ font-size: 1rem; }
+}
+
+/* Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus, iPhone 8, iPhone X, XS, XS Max  */
+@media screen and (device-aspect-ratio: 9/16) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"]{ font-size: 1rem; }
+}

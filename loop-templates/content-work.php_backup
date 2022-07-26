@@ -1,0 +1,95 @@
+<?php
+/**
+ * Partial template for content in page.php
+ *
+ * @package UnderStrap
+ */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+?>
+<div class="titlebar">
+  <h1 class="page-title"><?php echo the_field('work_title'); ?></h1>
+</div><!-- .titlebar -->
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/full-circle-element.png" class='full-circle-element-work' />
+
+<div class='work-header'>
+  <div class='container-fluid'>
+    <div class="row">
+      <div class="col-sm-12 col-md-3">
+         <form id="category-select" class="select-category" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
+          <?php
+          $args = array(
+              'show_option_none' => __( 'Services', 'textdomain' ),
+              'show_count'       => 1,
+              'orderby'          => 'name',
+              'echo'             => 0,
+              'class'            => 'select'
+          );
+          ?>
+
+          <?php $select  = wp_dropdown_categories( $args ); ?>
+          <?php $replace = "<select$1 onchange='return this.form.submit()'>"; ?>
+          <?php $select  = preg_replace( '#<select([^>]*)>#', $replace, $select ); ?>
+
+          <?php echo $select; ?>
+
+          <noscript>
+              <input type="submit" value="View" />
+          </noscript>
+        </form>
+      </div><!-- .col-sm-12 .col-md-4 -->
+      <div class="col-sm-12 col-md-3">
+         <form id="category-select" class="select-category" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
+            <?php
+            $args = array(
+               'show_option_none' => __( 'Industries', 'textdomain' ),
+               'show_count'       => 1,
+               'orderby'          => 'name',
+               'echo'             => 0,
+               'class'            => 'select'
+            );
+            ?>
+
+            <?php $select  = wp_dropdown_categories( $args ); ?>
+            <?php $replace = "<select$1 onchange='return this.form.submit()'>"; ?>
+            <?php $select  = preg_replace( '#<select([^>]*)>#', $replace, $select ); ?>
+
+            <?php echo $select; ?>
+
+            <noscript>
+               <input type="submit" value="View" />
+            </noscript>
+         </form>
+      </div><!-- .col-sm-12 .col-md-4 -->
+      <div class="col-sm-12 col-md-6"></div><!-- .col-sm-12 .col-md-4 -->
+    </div><!-- .row -->
+  </div><!-- .container-fluid -->
+</div><!-- .blog-header -->
+
+
+<div class='work-wrapper'>
+  <?php
+     //echo do_shortcode('[ajax_load_more repeater="template_1" container_type="div" css_classes="container-fluid" post_type="results" transition_container_classes="row" posts_per_page="1" scroll="false"  transition="fade"  button_label="Learn More"]'); 
+  ?>
+
+<form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
+	<?php
+		if( $terms = get_terms( array( 'taxonomy' => 'category', 'orderby' => 'name', 'include' => 1518, ) ) ) : 
+ 
+			echo '<select id="yourselect" name="categoryfilter"><option value="">Select category...</option>';
+			foreach ( $terms as $term ) :
+				echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
+			endforeach;
+			echo '</select>';
+		endif;
+	?>
+	
+	<input type="hidden" name="action" value="myfilter">
+</form>
+
+<div id="response"></div>
+</div><!-- .wrapper -->
+
+
+

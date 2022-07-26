@@ -1,0 +1,206 @@
+#wrapper-footer-full {
+   background-color: $primaryBlue;
+}
+
+.wrapper-footer {
+   padding: 1rem 15px 4rem;
+   background-color: $primaryBlue;
+}
+
+.content-footer-wrapper {
+   padding: 4rem 15px 0;
+
+   .footer-left {
+        position: relative;
+
+        .footer-tagline {
+            h2 {
+                color: $white;
+                font-family: $poppins;
+                font-weight: 600;
+                font-size: 1.5rem;
+                padding: 1rem 0;
+            }
+        }
+
+        .footer-logo {
+            img {
+                height: 3rem;
+            }
+        }
+
+        .footer-menu {
+            color: $white;
+            font-family: $poppins;
+            font-weight: 500;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+
+            .menu ul {
+                padding-inline-start: 0px!important;
+                margin: 1.25rem auto 1.25rem auto;
+                list-style-type: none;
+                list-style: none;
+                list-style-image: none;
+            }
+            
+            .menu li {
+                padding: 0px 1.25rem 0px 0px;
+                display: inline-block;
+            } 
+            .menu {
+                a { 
+                    color:#FFFFFF;
+                }
+                :hover {
+                    color: $primary;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+   .footer-right {
+      position: relative;
+
+      .social-media {
+         padding-top: 3.5rem;
+         padding-bottom: 0.5rem;
+         
+         a {
+            color: $primary;
+            font-family: $poppins;
+            font-weight: 600;
+            font-size: 1.75rem;
+            padding: 0 0 0.5rem;
+            text-decoration: none !important;
+            display:inline-block;
+
+            &:hover {
+               color: #ea9344;
+            }
+         }
+      }
+
+      .social-buttons {
+         ul {
+            list-style-type: none;
+
+            li {
+               padding-left: 2rem;
+            }
+         }
+
+         a {
+            color: $white;
+
+            &:hover * {
+               fill: $primary;
+            }
+         }
+      }
+   }
+}
+
+.footer-bottom-bar {
+    border-top:1px solid $white!important;
+}
+
+.footer-bottom-bar-menu {
+    color: $white;
+    font-family: $poppins;
+    font-weight: 500;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+
+    .menu ul {
+        padding-inline-start: 0px!important;
+        margin: 2.5rem 0;
+        list-style-type: none;
+        list-style: none;
+        list-style-image: none;
+        text-align: left;
+    }
+
+    .menu li {
+        padding: 0px 1.25rem 0px 0px;
+        display: inline-block;
+    } 
+
+    .menu {
+        a { 
+            color:#FFFFFF;
+
+            :hover {
+                color: $primary;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .content-footer-wrapper .footer-left .footer-menu, .footer-bottom-bar-menu {
+        font-size: 1rem;
+    }
+
+    .wrapper-footer {
+        padding-top: 3.5rem;
+    }
+
+    .content-footer-wrapper .footer-left .footer-menu .menu li {
+        display: block;
+        padding-bottom: 2rem;
+        padding-right:0;
+    }
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+   .social-media {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+   }
+   .content-footer-wrapper .menu li.menu-item, .footer-wrapper .menu li.menu-item, .footer-bottom-bar-menu .menu li.menu-item {
+      display:block;
+      text-align:center;
+      margin:0 auto;
+      padding:1rem;
+   }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+
+.site-footer {
+   .site-info {
+        margin: 2.5rem 0;
+        color: $white;
+        font-family: $poppins;
+        font-weight: 500;
+        font-size: 0.75rem;
+        position: relative;
+   }
+}

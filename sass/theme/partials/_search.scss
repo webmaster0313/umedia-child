@@ -1,0 +1,73 @@
+.page-header {
+  h2 {
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: $darkGrey;
+    text-transform: uppercase;
+    margin: 4rem 0 4rem;
+    text-transform: lowercase;;
+    span {
+      font-weight: 500;
+      text-transform: lowercase;
+      padding-left: .5rem;
+    }
+  }
+}
+.search-page {
+  margin: 1rem auto;
+}
+.item-post {
+  border-top: 1px solid #979797!important;
+  padding: 4em 0;
+}
+.entry-header {
+  padding: 2em 0;
+  h2.entry-title a {
+    font-family: $avBlack;
+    font-weight: 900;
+    color: $primaryBlue;
+    font-size: 1.5rem;
+  }
+}
+
+.entry-summary {
+  font-family: $avLight;
+  color: $primaryBlue;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  b, strong  {
+    font-family: $avBlack;
+    font-weight: 900;
+    color: $primaryBlue;
+  }
+
+}
+
+.btn-readmore {
+  background-color: $primaryBlue;
+  display: inline-block;
+  padding: 0.75rem 2rem !important;
+  text-align: center !important;
+  transition: 0.5s !important;
+  color: $white !important;            
+  box-shadow: 0 0 1.25rem #eee !important;
+  border-radius: 4rem !important;
+  font-weight: 500 !important;
+  font-size: 0.8rem !important;
+  font-family: $poppins !important;
+  cursor: pointer !important;
+  border:none !important;
+
+  &:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: $white;
+      text-decoration: none;
+      background-color:  #565a79;
+  }
+}
+
+.umedia-read-more-link {
+  margin-top: 2rem;
+}

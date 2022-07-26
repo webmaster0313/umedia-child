@@ -1,0 +1,92 @@
+.events-page {
+  .events-element {
+    position: absolute;
+    left: 55%;
+    top: 1rem;
+    z-index: 5;
+  }
+  .event-date {
+    h2 {
+      font-family: $poppins;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: #4c4c4c;
+      text-transform: uppercase;
+      margin: 0 0 2rem;
+      padding: 2rem 0 0;
+    }
+  }
+
+  .event-location {
+    h3 {
+      font-family: $avMedium;
+      font-size: 1.3rem;
+      color: #4c4c4c;
+      margin: 0 0 2rem;
+    }
+  }
+  
+
+  &.author-box { 
+    margin-top: 2rem!important;
+    margin-bottom: 8rem!important;
+  }
+
+  .events-superbody {
+    margin-top: 1.5rem;
+    margin-bottom: 8rem;
+    padding: 3rem 0;
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #979797;
+
+    h2 {
+      font-family: $poppins;
+      font-weight: 300;
+      font-size: 1.5rem;
+      color: $darkGrey;
+      line-height: 2.5rem;
+    }
+
+  }
+
+  .event-details {
+    
+    .event-desc {
+      font-family: $avLight;
+      color: #4c4c4c;
+      font-size: 1.25rem;
+      line-height: 2rem;
+      margin: 0 0 3.5rem; 
+    }
+     
+    h2 {
+      font-family: $avBlack;
+      font-size: 1.75rem;
+      color: #4c4c4c;
+      margin: 0 0 2rem;
+    }
+  }
+
+  ul {
+    border-left:1px solid #979797;
+    padding-left: 3.5rem;
+    list-style: none;
+
+    li {
+        margin-bottom: 1.5rem;
+    }
+  }
+  
+}
+
+
+
+@media (max-width: 575.98px) {
+  .events-page .events-element {
+    position: absolute;
+    left: 20%;
+    top: 0.01rem;
+    z-index: 5;
+    right: 20%;
+  }
+}

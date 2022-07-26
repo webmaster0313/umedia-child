@@ -1,0 +1,336 @@
+#wrapper-navbar {
+    .navbar {
+        padding: 2rem 0 !important;
+    }
+
+    .bg-primary {
+        background-color: transparent!important;
+    }
+
+    nav {
+        img {
+            height: 2.5rem;
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: .5rem 0rem;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    height: 6.5rem;
+}
+
+.activate {
+    background-color: $primaryBlue;
+}
+
+.stickynavbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 0rem;
+    z-index: 10000;
+    background-color: $primaryBlue;
+    height: 6.5rem;
+}
+
+/* For admin purpose only when styling.  This will get the Admin Bar to behave when logged in. */
+.admin-bar .sticky .stickynavbar {
+    position: relative;
+    top: 2rem!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:$white;
+}
+
+.nav-link {
+    color: $white;
+    font-family: $avMedium;
+    font-size: 1rem;
+    padding: 0.25rem;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: $primary!important;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, 
+.navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link.show, 
+.navbar-dark .navbar-nav .show > .nav-link {
+    color: $primary!important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+.menu-item {
+    display:inline-block;
+}
+
+// Search Icon and Input In Navbar
+.search-field {
+    background-color: transparent;
+    background-image: url('../assets/images/search-icon.svg');
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+    border: none;
+    cursor: pointer;
+    height: 2.3125rem;
+    padding: 0 0 0 1.4rem;
+    position: relative;
+    -webkit-transition: width 0.2s ease, background 0.2s ease;
+    -o-transition: width 0.2s ease, background 0.2s ease;
+    transition: width 0.2s ease, background 0.2s ease;
+    width: 0; 
+}
+
+   
+.search-field:focus, .mobile-search-field {
+    background-color: $white;
+    border: 0.125rem solid #f8f8f8;
+    border-radius: 1.25rem;
+    cursor: text;
+    outline: 0;
+    width: 14rem;
+}
+
+#main-nav {
+    .fa-times {
+        display:none;
+        color:white;
+    }
+
+    .search-field:focus + .fa-times {
+        margin: 0.5rem 0.5rem;
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+    }
+}
+ 
+.search-submit {
+    display: none;
+}
+ 
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+.mobile-search-field {
+    width:calc(100% - 2rem);
+    margin:0 0.5rem;
+    padding:0.5rem 1rem;
+}
+ 
+/**/
+input[type=text], input[type=email], input[type=tel], select, textarea {
+    border-radius: 0.125rem;
+    width: 90%;
+    background: $white;
+    font-family: $avLight;
+    border-width: 0;
+    padding: 0.625rem 1rem;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 1px solid rgba(54, 59, 92, 0.5);
+    margin-bottom: .5rem;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, select:focus, textarea:focus {
+    border: 1px solid $primary;
+}
+ 
+textarea {
+    padding: 0.625rem; 
+}
+ 
+#searchform {
+    margin-bottom: 0; 
+  
+    input {
+        display: inline-block;
+        margin-bottom: 0; 
+    }
+  
+    #searchsubmit {
+        margin-left: 0.5em;
+        display: inline-block;
+        border-radius: 0.125rem;
+        text-transform: uppercase;
+        padding: 0.3rem;
+        border: 0.125rem solid;
+        text-align: center;
+        max-width: 7.5rem;
+        font-size: 1em;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        -webkit-transition-property: color;
+        -o-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        background: rgba(247, 127, 0, 0);
+        font-family: "PT Sans", sans-serif;
+        border-color: $primary;
+        color: $primary;
+
+            &:hover {
+            color: #ffffff;
+            border-color: #363b5c;
+            background: #363b5c; 
+            
+            &:before {
+                -webkit-transform: scaleY(1);
+                -ms-transform: scaleY(1);
+                transform: scaleY(1); 
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            -webkit-transform: scaleY(0);
+            -ms-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transform-origin: 50%;
+            -ms-transform-origin: 50%;
+            transform-origin: 50%;
+            -webkit-transition-property: transform;
+            -webkit-transition-property: -webkit-transform;
+            transition-property: -webkit-transform;
+            -o-transition-property: transform;
+            transition-property: transform;
+            transition-property: transform, -webkit-transform;
+            -webkit-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            background: $primary;
+        }
+    }
+}
+ 
+// End Search
+
+.contact-btn {
+    color: #ffffff;
+    display: block;
+    padding: 0.5rem 1rem;
+    font-family: $avLight;
+    font-size: 0.8rem;
+    background-color: $primary;
+    border-radius: 2rem;
+    border: none;
+    transition: 0.5s!important;
+    float:left;
+    margin-right: 1rem
+}
+
+.contact-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: $white;
+    text-decoration: none;
+    background-color:  rgba(234,147,68, 1);
+    border:none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .nav-link {
+        font-size: 1.25rem;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    #wrapper-navbar {
+        .navbar {
+            padding: 1rem 0 !important;
+        }
+
+        .navbar-nav {
+            padding: 1rem;
+
+            .menu-item {
+                padding-top:1rem;
+                padding-bottom:1rem;
+            }
+        }
+
+        .sticky, .stickynavbar {
+            height: 4.5rem;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  
+    .navbar {
+        padding: 1rem 0 !important;
+    }
+
+    .navbar-collapse {
+        background-color: $primaryBlue!important;
+        padding: 1rem;
+        margin-top: 3rem;
+    }
+
+    .search-form {
+        position: relative;
+    }
+
+    .navbar-nav {
+        padding:0;
+    }
+
+    .navbar-expand-md .navbar-toggler {
+        display: inline-block;
+        padding: 0;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .contact-btn {
+        margin-right: 2rem;
+    }
+}

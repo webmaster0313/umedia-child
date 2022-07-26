@@ -1,0 +1,395 @@
+
+// ********** Video Player - Global - Located in _child-theme.scss  Line 262  Custom JS in custom.js JS Directory  **********
+// ***** Hero Image *******
+.hero-work {
+    background-size: cover;
+    min-height: 31.25rem;
+    max-height: 56.25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.category-title-bar {
+    background: rgba(46,48,65, .82); 
+    border-radius: 5.625rem 0 0 5.625rem; 
+    margin-top: 0;
+    position: relative;
+    
+    .title {
+        font-family: $avLight;
+        font-size: 1.25rem;
+        color: $white;
+        padding: 1.5rem 3.5rem;
+    }
+
+    .category-title-bar-extension {
+        background: rgba(46,48,65, .82); 
+        width: 4rem;
+        height: 100%;
+        position: absolute;
+        left: 100%;
+        top: 0;
+    }
+}
+
+.work-post {
+    border-top: 1px $primaryBlue;
+    margin-top: 1.5rem;
+    margin-bottom: 8rem;
+    
+    .subhead-title {
+        padding: 2rem 1rem;
+        border-top:1px solid $mediumGrey;
+        border-bottom:1px solid $mediumGrey;
+    
+        h2 {
+            font-family: $poppins;
+            font-weight: 300;
+            font-size: 2rem;
+            color: $mediumGrey;
+            line-height: 3rem;
+
+            b, strong {
+                font-weight: 300;
+                color: $darkGrey;
+            }
+        }
+    }
+
+
+    .page-intro {
+        padding: 6rem 0;
+        font-size: 1.25rem;
+        font-family: $avLight;
+        line-height: 3rem;
+        color: $darkGrey;
+    }
+
+    // ********** Let's Be Brief Section **********
+
+    .lets-be-brief {
+        background: #EAE9E1;
+        position: relative;
+        border-top-left-radius: 3.5rem;
+        border-bottom-left-radius: 3.5rem;
+        padding: 4rem 10rem 4rem 4rem;
+        z-index: 1;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
+        .descriptions {
+            padding-left: 0px;
+            list-style: none;
+            margin: 2rem 0 0;
+
+            h3 {
+                font-family: $avBlack;
+                display: inline-block;
+                color: $darkGrey;
+                line-height: normal;
+                font-size: 1.25rem;
+                margin: 0 0 .5rem 0;
+            }
+
+            span {
+                color: $darkGrey;
+                font-family: $avLight;
+                font-size: 1.25rem;
+
+                p {
+                    margin: 0 0 3rem 0;
+                }
+            }
+        }
+    
+        h2 {
+            font-family: $poppins;
+            font-weight: 600;
+            font-size: 1rem;
+            color: $darkGrey;
+            text-transform: uppercase;
+            margin: 3rem 0 4rem;
+        }
+        
+        img {
+            height: calc(100% - 9rem);
+            width: auto;
+            position: absolute;
+            top: 10%;
+            right: -55%;
+            z-index: 101;
+        }
+
+        .greige-side {
+            background: $lightGreige;
+            position:absolute;
+            top:0;
+            left:100%;
+            width:100%;
+            height:100%;
+            z-index:100;
+        }
+    }
+
+    // ********** Quote **********
+
+    .quote {
+        padding: 0 4rem 0;
+        border-left: 1px solid $mediumGrey;
+        color: $darkGrey;
+        font-family: $avLight;
+        font-size: 1.75rem;
+        line-height: 3rem;
+        margin-top: 5rem;
+    }
+
+    // ********** VIDEO **********
+
+    .flex-content {
+        padding: 2rem 0;
+
+        .title {
+        
+            h2 {
+                font-family: $poppins;
+                font-weight: 600;
+                font-size: 1rem;
+                color: $darkGrey;
+                padding: 3rem 0 5rem;
+            }
+        }
+    }
+
+    // ********** Extended Version **********
+    .extended-version {
+        color: $darkGrey;
+        font-family: $avLight;
+    
+        h2 {
+            font-family: $poppins;
+            font-weight: 600;
+            font-size: 1rem;
+            color: $darkGrey;
+            padding: 3rem 0;
+        }
+
+        h3 {
+            font-family: $avBlack;
+            display:inline-block;
+            color: $darkGrey;
+            line-height: normal;
+            font-size: 1.25rem;
+            padding: 0 0 2.5rem;
+        }
+
+        p {
+            margin-bottom: 3.4rem;
+            font-size: 1.25rem;
+            font-family: $avLight;
+            line-height: 2.5rem;
+        }
+    }
+
+    // ********** What We Did **********
+
+    .what-we-did, .tech-stack {
+        padding: 2rem 1rem;
+        border-top: 1px solid $mediumGrey;
+        border-bottom: 1px solid $mediumGrey;
+
+        .title {
+            
+            h2 {
+                font-family: $poppins;
+                font-weight: 600;
+                font-size: 1rem;
+                text-transform: uppercase;
+                color: $darkGrey;
+                padding: 3rem 0;
+            }
+        }
+            
+        .row {
+            .col-12.col-md-6 {
+                font-family: $avLight;
+                color: $darkGrey;
+                font-size: 1.25rem;
+                line-height: 42px;
+                padding-bottom: 1rem;
+            
+                a {
+                    color: $darkGrey;
+                    
+                    &:hover {
+                        color: $primary;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        ul {
+            padding:0;
+            
+            li {
+                display: inline-block;
+                list-style-type: none;
+                margin-right: 6rem;
+                font-family: $avLight;
+                color: $darkGrey;
+                font-size: 1.25rem;
+                line-height: 42px;
+                padding-bottom: 1rem;
+            
+                a {
+                    color: $darkGrey;
+                    
+                    &:hover {
+                        color: $primary;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    // ********** Tech Stack **********
+    .tech-stack {
+        border-top: none;
+        border-bottom: 1px solid $mediumGrey;
+    }
+}
+
+// ********** Mobile CSS Views **********
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .hero-work {
+        background-size: cover;  
+        min-height: 20rem;
+        max-height: 32rem;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .work-post {
+        .head-title h2 {
+            font-size: 2rem!important;
+            line-height: 3.5rem!important;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    .hero-image-wrapper {
+        padding: 12rem 0;
+    }
+
+    .breadcrumb.blog {
+        margin-top: 0 !important;
+    }
+
+    .category-title-bar {
+        border-radius: 0 5.625rem 5.625rem 0;
+        margin-top: 0;
+
+        .category-title-bar-extension {
+            background: rgba(46,48,65, .82); 
+            width: 4rem;
+            height: 100%;
+            position: absolute;
+            left: -4rem;
+            right: 100%;
+            top: 0;
+        }
+    }
+
+    .work-post {
+        margin-top: 0;
+    }
+
+    .work-post {
+        .subhead-title {
+            h2 {
+                font-size: 1.875rem!important;
+                line-height: 3.75rem!important;
+            }
+        }
+    }
+
+    .lets-be-brief img {
+        right: -85%!important;
+    }
+
+    .lets-be-brief ul li {
+        font-size: 1.5rem;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .hero-work {
+        background-size: cover;  
+        min-height: 27rem;
+        max-height: 42rem;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .lets-be-brief {
+        padding: 4rem 6rem 4rem 4rem;
+    }
+
+    .lets-be-brief img {
+        height: 43.75rem;
+        width: 43.75rem;
+        position: absolute;
+        top: 22%;
+        right: -85%;
+        z-index: 101;
+    }
+
+    .lets-be-brief ul li {
+        color: $darkGrey;
+        font-family: $avLight;
+        font-size: 1.75rem;
+        margin: 0 0 3rem 0;
+    }
+}
+
+// Large devices (desktops, less than 1300px)
+@media (max-width: 1199.98px) { 
+    .hero-work {
+        background-size: cover;  
+        min-height: 530px;
+        max-height: 52rem;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .work-post {
+        .subhead-title {
+            h2 {
+                font-family: $poppins;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1300px and up)
+@media (min-width: 1300px) {  }
